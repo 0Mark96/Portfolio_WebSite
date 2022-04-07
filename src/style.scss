@@ -1,12 +1,22 @@
+
+
 // COLOR
 
 $black: #010101;
 $white: #FFFFFF;
 $grey: #3E3E3E;
 
+//------------------------------^
 
+// Mixin flex center
 
+@mixin flexCenter() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
+  //------------------------------^
 
 *{
     margin: 0;
@@ -14,10 +24,8 @@ $grey: #3E3E3E;
     box-sizing: border-box;
 }
 
-.background-s-line1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.background-s-screen1{
+    @include flexCenter;
     height:50px;
     width:120px;
     position: fixed;
@@ -26,18 +34,37 @@ $grey: #3E3E3E;
     left:20px;
     border: 0.8px solid $grey;
     border-radius: 6px;
+    animation: floating linear 25s infinite;
 
-    .background-s-line2{
+    .background-s-screen2{
       height: 46px; //90% del primo div
       width:116px; //scalo lo stesso numero dell'altezza
       border: 0.5px solid $grey;
       border-radius: 5px;
     }
-    &:hover{
-        transform: translateY(30px);
-    }
+    
 }
 
+@keyframes floating{
+    0%{
+        transform:translate(0%,0%) rotate(0deg);
+    }
+    20%{
+        transform:translate(18vw,15vh) rotate(72deg);
+    }
+    40%{
+        transform:translate(0vw,45vh) rotate(144deg);
+    }
+    60%{
+         transform:translate(-12vw,15vh) rotate(216deg);
+     }
+    80%{
+         transform:translate(-4vw,-5vh) rotate(288deg);
+     }
+     100%{
+        transform:translate(0vh,0vw) rotate(360deg);
+    }
+}
 
 
 
