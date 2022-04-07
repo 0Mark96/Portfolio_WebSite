@@ -1,0 +1,47 @@
+// COLOR
+
+$black: #010101;
+$white: #FFFFFF;
+$grey: #3E3E3E;
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background-s-line1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:50px;
+    width:120px;
+    position: fixed;
+    z-index:-1;
+    top:10px;
+    left:20px;
+    border: 0.8px solid $grey;
+    border-radius: 6px;
+
+    .background-s-line2{
+      height: 46px; //90% del primo div
+      width:116px; //scalo lo stesso numero dell'altezza
+      border: 0.5px solid $grey;
+      border-radius: 5px;
+    }
+    &:hover{
+        transform: translateY(30px);
+    }
+}
+
+
+
+
+body{
+    background-color: $black;
+    color:$white;
+}

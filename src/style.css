@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.background-s-line1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 120px;
+  position: fixed;
+  z-index: -1;
+  top: 10px;
+  left: 20px;
+  border: 0.8px solid #3E3E3E;
+  border-radius: 6px;
+}
+.background-s-line1 .background-s-line2 {
+  height: 46px;
+  width: 116px;
+  border: 0.5px solid #3E3E3E;
+  border-radius: 5px;
+}
+.background-s-line1:hover {
+  transform: translateY(30px);
+}
+
+body {
+  background-color: #010101;
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=style.css.map */
