@@ -16,7 +16,8 @@ $grey: #3E3E3E;
     justify-content: center;
   }
 
-  //------------------------------^
+//------------------------------^
+  
 
 *{
     margin: 0;
@@ -24,48 +25,141 @@ $grey: #3E3E3E;
     box-sizing: border-box;
 }
 
-.background-s-screen1{
+/* screen XS___________________________________________________________________________________*/
+.background-xs-screen1{
     @include flexCenter;
-    height:50px;
-    width:120px;
+    height:40px;
+    width:100px;
     position: fixed;
     z-index:-1;
     top:10px;
     left:20px;
-    border: 0.8px solid $grey;
+    border: 0.6px solid $grey;
     border-radius: 6px;
-    animation: floating linear 25s infinite;
+    background-color:$black;
+    animation: floating-XS linear 40s infinite;
 
-    .background-s-screen2{
-      height: 46px; //90% del primo div
-      width:116px; //scalo lo stesso numero dell'altezza
-      border: 0.5px solid $grey;
+    .background-xs-screen2{
+      height: 36px; //90% del primo div
+      width:96px; //scalo lo stesso numero dell'altezza
+      border: 0.3px solid $grey;
       border-radius: 5px;
     }
     
 }
 
-@keyframes floating{
+@keyframes floating-XS{
+        0%{
+            transform:translate(0%,0%) rotate(0deg);
+        }
+        20%{
+            transform:translate(120px,130px) rotate(72deg);
+        }
+        40%{
+            transform:translate(0px,250px) rotate(144deg);
+        }
+        60%{
+             transform:translate(-120px,150px) rotate(216deg);
+         }
+        80%{
+             transform:translate(-40px,-50px) rotate(288deg);
+         }
+         100%{
+            transform:translate(0px,0px) rotate(360deg);
+        }
+    }
+
+/*Sreen S___________________________________________________________________________________*/
+    
+.background-s-screen1{
+    @include flexCenter;
+    height:60px;
+    width:130px;
+    position: fixed;
+    z-index:-1;
+    top:50%;
+    right:5%;
+    border: 0.8px solid $grey;
+    border-radius: 6px;
+    background-color:$black;
+    animation: floating-S linear 40s infinite;
+    .background-s-screen2{
+        height: 54px; //90% del primo div
+        width:124px; //scalo lo stesso numero dell'altezza
+        border: 0.5px solid $grey;
+        border-radius: 5px;
+    }
+        
+}
+    
+
+@keyframes floating-S{
     0%{
         transform:translate(0%,0%) rotate(0deg);
     }
     20%{
-        transform:translate(18vw,15vh) rotate(72deg);
+        transform:translate(-50px,-80px) rotate(72deg);
     }
+
     40%{
-        transform:translate(0vw,45vh) rotate(144deg);
+        transform:translate(-0px,-290px) rotate(144deg);
     }
     60%{
-         transform:translate(-12vw,15vh) rotate(216deg);
+         transform:translate(-100px,-120px) rotate(216deg);
      }
     80%{
-         transform:translate(-4vw,-5vh) rotate(288deg);
+         transform:translate(+40px,0px) rotate(288deg);
      }
      100%{
-        transform:translate(0vh,0vw) rotate(360deg);
-    }
-}
+        transform:translate(0px,0px) rotate(360deg);
+    }         
+}     
 
+/*Sreen L___________________________________________________________________________________*/
+    
+.background-l-screen1{
+    @include flexCenter;
+    height:110px;
+    width:240px;
+    position: fixed;
+    z-index:-1;
+    bottom:15%;
+    left:3%;
+    background-color:$black;
+    border: 1.5px solid $grey;
+    border-radius: 10px;
+    animation: floating-L linear 40s infinite;
+    transform:rotate(-60deg);
+    .background-l-screen2{
+        height: 100px; //90% del primo div
+        width:230px; //scalo lo stesso numero dell'altezza
+        border: 0.8px solid $grey;
+        border-radius: 8px;
+    }
+        
+}
+    
+
+@keyframes floating-L{
+    0%{
+        transform:translate(0%,0%) rotate(0deg);
+    }
+    20%{
+        transform:translate(-150px,-80px) rotate(-72deg);
+    }
+    40%{
+        transform:translate(-0px,-290px) rotate(-144deg);
+    }
+    60%{
+         transform:translate(+40px,-150px) rotate(-216deg);
+     }
+    80%{
+         transform:translate(+40px,+50px) rotate(-288deg);
+     }
+     100%{
+        transform:translate(0px,0px) rotate(-360deg);
+    }         
+}     
 
 
 body{
