@@ -189,7 +189,7 @@
   position: fixed;
   z-index: -1;
   bottom: 0%;
-  right: -40%;
+  right: -100px;
   background-color: #010101;
   border: 1.8px solid #3E3E3E;
   border-radius: 15px;
