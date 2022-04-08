@@ -37,7 +37,7 @@ $grey: #3E3E3E;
     border: 0.6px solid $grey;
     border-radius: 6px;
     background-color:$black;
-    animation: floating-XS linear 40s infinite;
+    animation: floating-XS linear 60s infinite;
 
     .background-xs-screen2{
       height: 36px; //90% del primo div
@@ -77,12 +77,13 @@ $grey: #3E3E3E;
     width:130px;
     position: fixed;
     z-index:-1;
-    top:50%;
+    top:5%;
     right:5%;
     border: 0.8px solid $grey;
     border-radius: 6px;
     background-color:$black;
-    animation: floating-S linear 40s infinite;
+    animation: floating-S linear 60s infinite;
+    transform:rotate(120deg);
     .background-s-screen2{
         height: 54px; //90% del primo div
         width:124px; //scalo lo stesso numero dell'altezza
@@ -95,23 +96,70 @@ $grey: #3E3E3E;
 
 @keyframes floating-S{
     0%{
-        transform:translate(0%,0%) rotate(0deg);
+        transform:translate(0%,0%) rotate(120deg);
     }
     20%{
-        transform:translate(-50px,-80px) rotate(72deg);
+        transform:translate(50px,80px) rotate(192deg);
     }
 
     40%{
-        transform:translate(-0px,-290px) rotate(144deg);
+        transform:translate(0px,290px) rotate(264deg);
     }
     60%{
-         transform:translate(-100px,-120px) rotate(216deg);
+         transform:translate(100px,120px) rotate(336deg);
      }
     80%{
-         transform:translate(+40px,0px) rotate(288deg);
+         transform:translate(-40px,0px) rotate(408deg);
      }
      100%{
-        transform:translate(0px,0px) rotate(360deg);
+        transform:translate(0px,0px) rotate(480deg);
+    }         
+}     
+
+/*Sreen M___________________________________________________________________________________*/
+    
+.background-m-screen1{
+    @include flexCenter;
+    height:110px;
+    width:190px;
+    position: fixed;
+    z-index:-1;
+    top:20%;
+    right:20%;
+    border: 1.5px solid $grey;
+    border-radius: 6px;
+    background-color:$black;
+    animation:  floating-M linear 60s infinite;
+    transform:rotate(160deg);
+    .background-m-screen2{
+        height: 99px; //90% del primo div
+        width:179px; //scalo lo stesso numero dell'altezza
+        border: 0.8px solid $grey;
+        border-radius: 5px;
+    }
+        
+}
+    
+
+@keyframes floating-M{
+    0%{
+        transform:translate(0px,0px) rotate(160deg);
+    }
+    20%{
+        transform:translate(100px,50px) rotate(232deg);
+    }
+    40%{
+        transform:translate(100px,-200px) rotate(304deg);
+    }
+    60%{
+         transform:translate(-80px,-100px) rotate(376deg);
+     }
+    80%{
+         transform:translate(-140px,-30px) rotate(448deg);
+     }
+   
+     100%{
+        transform:translate(0px,0px) rotate(520deg);
     }         
 }     
 
@@ -119,48 +167,92 @@ $grey: #3E3E3E;
     
 .background-l-screen1{
     @include flexCenter;
-    height:110px;
-    width:240px;
+    height:140px;
+    width:280px;
     position: fixed;
     z-index:-1;
     bottom:15%;
     left:3%;
     background-color:$black;
-    border: 1.5px solid $grey;
+    border: 1.8px solid $grey;
     border-radius: 10px;
-    animation: floating-L linear 40s infinite;
+    animation: floating-L linear 60s infinite;
     transform:rotate(-60deg);
     .background-l-screen2{
-        height: 100px; //90% del primo div
-        width:230px; //scalo lo stesso numero dell'altezza
-        border: 0.8px solid $grey;
+        height: 126px; //90% del primo div
+        width:266px; //scalo lo stesso numero dell'altezza
+        border: 1px solid $grey;
         border-radius: 8px;
+    }
+        
+}
+
+@keyframes floating-L{
+    0%{
+        transform:translate(0%,0%) rotate(-60deg);
+    }
+    20%{
+        transform:translate(-150px,-80px) rotate(-100deg);
+    }
+    40%{
+        transform:translate(-0px,-200px) rotate(-139deg);
+    }
+    60%{
+         transform:translate(40px,-100px) rotate(-150deg);
+     }
+    80%{
+         transform:translate(40px,80px) rotate(-108deg);
+     }
+     100%{
+        transform:translate(0px,0px) rotate(-60deg);
+    }         
+}     
+
+/*Sreen XL___________________________________________________________________________________*/
+    
+.background-xl-screen1{
+    @include flexCenter;
+    height:200px;
+    width:290px;
+    position: fixed;
+    z-index:-1;
+    bottom:0%;
+    right:-40%;
+    background-color:$black;
+    border: 1.8px solid $grey;
+    border-radius: 15px;
+    animation: floating-XL linear 60s infinite;
+    transform:rotate(20deg);
+    .background-xl-screen2{
+        height: 180px; //90% del primo div
+        width:270px; //scalo lo stesso numero dell'altezza
+        border: 1px solid $grey;
+        border-radius: 12px;
     }
         
 }
     
 
-@keyframes floating-L{
+@keyframes floating-XL{
     0%{
-        transform:translate(0%,0%) rotate(0deg);
+        transform:translate(0%,0%) rotate(20deg);
     }
     20%{
-        transform:translate(-150px,-80px) rotate(-72deg);
+        transform:translate(-150px,-80px) rotate(100deg);
     }
     40%{
-        transform:translate(-0px,-290px) rotate(-144deg);
+        transform:translate(-150px,-200px) rotate(160deg);
     }
     60%{
-         transform:translate(+40px,-150px) rotate(-216deg);
+         transform:translate(-40px,-100px) rotate(190deg);
      }
     80%{
-         transform:translate(+40px,+50px) rotate(-288deg);
+         transform:translate(20px,0px) rotate(195deg);
      }
      100%{
-        transform:translate(0px,0px) rotate(-360deg);
+        transform:translate(0px,0px) rotate(200deg);
     }         
 }     
-
 
 body{
     background-color: $black;
