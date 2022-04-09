@@ -36,8 +36,8 @@ $grey: #3E3E3E;
     left:20px;
     border: 0.6px solid $grey;
     border-radius: 6px;
-    background-color:$black;
-    animation: floating-XS linear 60s infinite;
+    background-color: $black;
+    animation: floating-XS linear 90s infinite;
 
     .background-xs-screen2{
       height: 36px; //90% del primo div
@@ -81,8 +81,8 @@ $grey: #3E3E3E;
     right:5%;
     border: 0.8px solid $grey;
     border-radius: 6px;
-    background-color:$black;
-    animation: floating-S linear 60s infinite;
+    background-color: $black;
+    animation: floating-S linear 90s infinite;
     transform:rotate(120deg);
     .background-s-screen2{
         height: 54px; //90% del primo div
@@ -127,15 +127,15 @@ $grey: #3E3E3E;
     top:20%;
     right:20%;
     border: 1.5px solid $grey;
-    border-radius: 6px;
-    background-color:$black;
-    animation:  floating-M linear 60s infinite;
-    transform:rotate(160deg);
+    border-radius: 8px;
+    background-color: $black;
+    animation:  floating-M linear 90s infinite;
+    transform:rotate(-160deg);
     .background-m-screen2{
         height: 99px; //90% del primo div
         width:179px; //scalo lo stesso numero dell'altezza
         border: 0.8px solid $grey;
-        border-radius: 5px;
+        border-radius: 6px;
     }
         
 }
@@ -143,23 +143,23 @@ $grey: #3E3E3E;
 
 @keyframes floating-M{
     0%{
-        transform:translate(0px,0px) rotate(160deg);
+        transform:translate(0px,0px) rotate(-160deg);
     }
     20%{
-        transform:translate(100px,50px) rotate(232deg);
+        transform:translate(100px,50px) rotate(-232deg);
     }
     40%{
-        transform:translate(100px,-200px) rotate(304deg);
+        transform:translate(100px,-200px) rotate(-304deg);
     }
     60%{
-         transform:translate(-80px,-100px) rotate(376deg);
+         transform:translate(-80px,-100px) rotate(-376deg);
      }
     80%{
-         transform:translate(-140px,-30px) rotate(448deg);
+         transform:translate(-140px,-30px) rotate(-448deg);
      }
    
      100%{
-        transform:translate(0px,0px) rotate(520deg);
+        transform:translate(0px,0px) rotate(-520deg);
     }         
 }     
 
@@ -173,10 +173,10 @@ $grey: #3E3E3E;
     z-index:-1;
     bottom:15%;
     left:3%;
-    background-color:$black;
+    background-color: $black;
     border: 1.8px solid $grey;
     border-radius: 10px;
-    animation: floating-L linear 60s infinite;
+    animation: floating-L linear 90s infinite;
     transform:rotate(-60deg);
     .background-l-screen2{
         height: 126px; //90% del primo div
@@ -212,20 +212,20 @@ $grey: #3E3E3E;
     
 .background-xl-screen1{
     @include flexCenter;
-    height:200px;
-    width:290px;
+    height:180px;
+    width:240px;
     position: fixed;
     z-index:-1;
     bottom:0%;
     right:-100px;
-    background-color:$black;
+    background-color: $black;
     border: 1.8px solid $grey;
     border-radius: 15px;
-    animation: floating-XL linear 60s infinite;
+    animation: floating-XL linear 90s infinite;
     transform:rotate(20deg);
     .background-xl-screen2{
-        height: 180px; //90% del primo div
-        width:270px; //scalo lo stesso numero dell'altezza
+        height: 164px; //90% del primo div
+        width:224px; //scalo lo stesso numero dell'altezza
         border: 1px solid $grey;
         border-radius: 12px;
     }
@@ -238,17 +238,15 @@ $grey: #3E3E3E;
         transform:translate(0%,0%) rotate(20deg);
     }
     20%{
-        transform:translate(-150px,-80px) rotate(100deg);
+        transform:translate(-160px,10px) rotate(56deg);
     }
     40%{
-        transform:translate(-150px,-200px) rotate(160deg);
+        transform:translate(-90px,-230px) rotate(92deg);
     }
     60%{
-         transform:translate(-40px,-100px) rotate(190deg);
+         transform:translate(-20px,-190px) rotate(128deg);
      }
-    80%{
-         transform:translate(20px,0px) rotate(195deg);
-     }
+
      100%{
         transform:translate(0px,0px) rotate(200deg);
     }         
@@ -257,4 +255,233 @@ $grey: #3E3E3E;
 body{
     background-color: $black;
     color:$white;
+    height: 150vh;
+}
+h1{
+    margin-top:300px;
+}
+
+
+
+/* Media Query for LOW resolution TABLETS, Ipads */
+
+@media (min-width: 540px) and (max-width: 767px) {
+
+/* screen XS_________________________________________*/
+.background-xs-screen1{
+    height:40px + (20/100 * 40);
+    width:100px + (20/100 * 100);
+    border-radius: 6px;
+    .background-xs-screen2{
+      height: 36px + (20/100 * 40);
+      width:96px + (20/100 * 100);
+      border-radius: 5px;
+    }
+}
+
+/*Sreen S____________________________________________*/
+    
+.background-s-screen1{
+    height:60px + (20/100 * 60);
+    width:130px + (20/100 * 130);
+    position: fixed;
+    border-radius: 6px +1;
+    .background-s-screen2{
+        height: 54px + (20/100 * 60);
+        width:124px + (20/100 * 130); 
+        border-radius: 5px +1;
+    }
+}
+    
+/*Sreen M_____________________________________________*/
+    
+.background-m-screen1{
+    height:110px + (20/100 * 110);
+    width:190px + (20/100 * 190);
+    border-radius: 8px +2;
+    .background-m-screen2{
+        height: 99px  + (20/100 * 110);
+        width:179px + (20/100 * 190); 
+        border-radius: 6px +2;
+    }        
+}
+    
+
+/*Sreen L_______________________________________________*/
+    
+.background-l-screen1{
+    height:140px + (20/100 * 140);
+    width:280px + (20/100 * 280);
+    border-radius: 10px +2;
+    .background-l-screen2{
+        height: 126px + (20/100 * 140); 
+        width:266px + (20/100 * 280);  
+        border-radius: 8px +2;  
+    }      
+} 
+
+/*Sreen XL_______________________________________________*/
+    
+.background-xl-screen1{
+    height:180px + (20/100 * 180);
+    width:240px + (20/100 * 240);
+    border-radius: 15px +2;
+    .background-xl-screen2{
+        height: 164px + (20/100 * 180); 
+        width:224px + (20/100 * 240); 
+        border-radius: 12px +2;
+    }       
+}
+}
+
+ 
+
+/* Media Query for TABLETS Ipads portrait mode */
+ 
+@media screen and (min-width: 768px) and (max-width: 980px),(min-width: 1400px){
+/* screen XS_________________________________________*/
+.background-xs-screen1{
+    height:40px + (80/100 * 40);
+    width:100px + (80/100 * 100);
+    border-radius: 6px;
+    .background-xs-screen2{
+      height: 36px + (80/100 * 40);
+      width:96px + (80/100 * 100);
+      border-radius: 5px;
+    }
+}
+
+/*Sreen S____________________________________________*/
+    
+.background-s-screen1{
+    height:60px + (80/100 * 60);
+    width:130px + (80/100 * 130);
+    position: fixed;
+    border-radius: 6px +1;
+    .background-s-screen2{
+        height: 54px + (80/100 * 60);
+        width:124px + (80/100 * 130); 
+        border-radius: 5px +1;
+    }
+}
+    
+/*Sreen M_____________________________________________*/
+    
+.background-m-screen1{
+    height:110px + (80/100 * 110);
+    width:190px + (80/100 * 190);
+    border-radius: 8px +2;
+    .background-m-screen2{
+        height: 99px  + (80/100 * 110);
+        width:179px + (80/100 * 190); 
+        border-radius: 6px +2;
+    }        
+}
+    
+
+/*Sreen L_______________________________________________*/
+    
+.background-l-screen1{
+    height:140px + (80/100 * 140);
+    width:280px + (80/100 * 280);
+    border-radius: 10px +2;
+    .background-l-screen2{
+        height: 126px + (80/100 * 140); 
+        width:266px + (80/100 * 280);  
+        border-radius: 8px +2;  
+    }      
+} 
+
+/*Sreen XL_______________________________________________*/
+    
+.background-xl-screen1{
+    height:180px + (80/100 * 180);
+    width:240px + (80/100 * 240);
+    border-radius: 15px +2;
+    .background-xl-screen2{
+        height: 164px + (80/100 * 180); 
+        width:224px + (80/100 * 240); 
+        border-radius: 12px +2;
+    }       
+}
+}
+
+
+ /* Media Query for Laptops and Desktops */
+ @media (min-width: 980px) and (max-width:1400px){
+
+    /* screen XS_________________________________________*/
+.background-xs-screen1{
+    top:40px;
+    left:100px;
+    height:40px + (60/100 * 40);
+    width:100px + (60/100 * 100);
+    border-radius: 6px;
+    .background-xs-screen2{
+      height: 36px + (60/100 * 40);
+      width:96px + (60/100 * 100);
+      border-radius: 5px;
+    }
+}
+
+/*Sreen S____________________________________________*/
+    
+.background-s-screen1{
+    top:50px;
+    right:150px;
+    height:60px + (60/100 * 60);
+    width:130px + (60/100 * 130);
+    border-radius: 6px +1;
+    .background-s-screen2{
+        height: 54px + (60/100 * 60);
+        width:124px + (60/100 * 130); 
+        border-radius: 5px +1;
+    }
+}
+    
+/*Sreen M_____________________________________________*/
+    
+.background-m-screen1{
+    top:20%;
+    right:35%;
+    height:110px + (60/100 * 110);
+    width:190px + (60/100 * 190);
+    border-radius: 8px +2;
+    .background-m-screen2{
+        height: 99px  + (60/100 * 110);
+        width:179px + (60/100 * 190); 
+        border-radius: 6px +2;
+    }        
+}
+    
+
+/*Sreen L_______________________________________________*/
+    
+.background-l-screen1{
+    bottom:15%;
+    left:8%;
+    height:140px + (60/100 * 140);
+    width:280px + (60/100 * 280);
+    border-radius: 10px +2;
+    .background-l-screen2{
+        height: 126px + (60/100 * 140); 
+        width:266px + (60/100 * 280);  
+        border-radius: 8px +2;  
+    }      
+} 
+
+/*Sreen XL_______________________________________________*/
+    
+.background-xl-screen1{
+    bottom:0%;
+    right:0px;
+    height:180px + (60/100 * 180);
+    width:240px + (60/100 * 240);
+    border-radius: 15px +2;
+    .background-xl-screen2{
+        height: 164px + (60/100 * 180); 
+        width:224px + (60/100 * 240); 
+        border-radius: 12px +2;
+    }       
+}
 }
