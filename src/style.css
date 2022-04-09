@@ -231,7 +231,7 @@ h1 {
 }
 
 /* Media Query for LOW resolution TABLETS, Ipads */
-@media (min-width: 540px) and (max-width: 767px) {
+@media screen and (min-width: 540px) and (max-width: 767px) {
   /* screen XS_________________________________________*/
   .background-xs-screen1 {
     height: 48px;
@@ -426,6 +426,56 @@ h1 {
     height: 272px;
     width: 368px;
     border-radius: 14px;
+  }
+}
+@media screen and (max-height: 414px) {
+  .background-xs-screen1 {
+    height: 40px;
+    width: 100px;
+  }
+  .background-xs-screen1 .background-xs-screen2 {
+    height: 36px;
+    width: 96px;
+  }
+
+  /*Sreen S___________________________________________________________________________________*/
+  .background-s-screen1 {
+    height: 60px;
+    width: 130px;
+  }
+  .background-s-screen1 .background-s-screen2 {
+    height: 54px;
+    width: 124px;
+  }
+
+  /*Sreen M___________________________________________________________________________________*/
+  .background-m-screen1 {
+    height: 110px;
+    width: 190px;
+  }
+  .background-m-screen1 .background-m-screen2 {
+    height: 99px;
+    width: 179px;
+  }
+
+  /*Sreen L___________________________________________________________________________________*/
+  .background-l-screen1 {
+    height: 140px;
+    width: 280px;
+  }
+  .background-l-screen1 .background-l-screen2 {
+    height: 126px;
+    width: 266px;
+  }
+
+  /*Sreen XL___________________________________________________________________________________*/
+  .background-xl-screen1 {
+    height: 180px;
+    width: 240px;
+  }
+  .background-xl-screen1 .background-xl-screen2 {
+    height: 164px;
+    width: 224px;
   }
 }
 
