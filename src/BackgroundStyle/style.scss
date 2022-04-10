@@ -19,11 +19,7 @@ $grey: #3E3E3E;
 //------------------------------^
   
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 /* screen XS___________________________________________________________________________________*/
 .background-xs-screen1{
@@ -252,14 +248,6 @@ $grey: #3E3E3E;
     }         
 }     
 
-body{
-    background-color: $black;
-    color:$white;
-    height: 150vh;
-}
-h1{
-    margin-top:300px;
-}
 
 
 
