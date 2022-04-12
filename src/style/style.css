@@ -54,11 +54,11 @@ body {
 }
 .header #navMenu.active .span1 {
   transform: translateY(12px) rotate(45deg);
-  width: 36px;
+  width: 42px;
 }
 .header #navMenu.active .span3 {
   transform: translateY(-12px) rotate(-45deg);
-  width: 36px;
+  width: 42px;
 }
 
 h1 {
