@@ -13,7 +13,6 @@ body {
 
 header {
   display: flex;
-  align-items: center;
   background: #0101014d;
   backdrop-filter: blur(1.7px);
   -webkit-backdrop-filter: blur(1.7px);
@@ -21,10 +20,10 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  transition: all 0.5s ease-in-out;
 }
 header #navMenu {
-  position: absolute;
+  position: fixed;
+  top: 2.5vh;
   right: 15px;
   transition: all 0.4s ease-in-out;
   transform: rotate(180deg);
@@ -62,15 +61,27 @@ header #navMenu.active .span3 {
   transform: translateY(-12px) rotate(-45deg);
   width: 42px;
 }
+header img {
+  position: fixed;
+  top: 1vh;
+  left: 10px;
+  width: 7vh;
+}
 
 h1 {
   margin-top: 150px;
 }
 
-img {
-  position: absolute;
-  left: 10px;
-  width: 7vh;
+.menu-container {
+  position: fixed;
+  background-color: #010101;
+  height: 100vh;
+  width: 100vw;
+}
+
+.menu-link {
+  color: yellow;
+  display: unset !important;
 }
 
 /*# sourceMappingURL=style.css.map */

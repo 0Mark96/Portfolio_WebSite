@@ -18,3 +18,13 @@ window.onscroll = function(){
  prevScrollPos = currentScrolPos
 } 
 
+//menu on click
+
+const menuLink = document.getElementById('menuLink');
+navMenu.addEventListener('click',async()=>{
+    header.classList.toggle('menu-container')
+    menuLink.classList.toggle('menu-link')
+    
+})
+//---------------------------------------------------------------------
+
