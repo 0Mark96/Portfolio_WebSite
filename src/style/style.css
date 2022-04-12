@@ -12,9 +12,9 @@ body {
 }
 
 .header {
-  background: #0101013b;
-  backdrop-filter: blur(1px);
-  -webkit-backdrop-filter: blur(1px);
+  background: #0101014d;
+  backdrop-filter: blur(1.7px);
+  -webkit-backdrop-filter: blur(1.7px);
   height: 8vh;
   width: 100%;
   position: fixed;
