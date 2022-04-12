@@ -33,6 +33,8 @@ body{
 
 
 .header{
+    display: flex;
+    align-items: center;
     background:#0101014d ;
     backdrop-filter: blur(1.7px);
     -webkit-backdrop-filter: blur(1.7px);
@@ -41,24 +43,29 @@ body{
     position: fixed;
     top:0;
     #navMenu{
-       margin-top: 15px;
-       margin-left:87vw;
+       margin-left:85vw;
        transition:  all .4s ease-in-out;
+       transform: rotate(180deg);
         .span1,
         .span2,
         .span3 {
            display:block;
-           width: 36px;
-           height: 3px;
+          // width: 36px;
+           height: 4px;
            background-color: $white;
            transition:  all .4s ease-in-out;
            &:not(:last-child){
-               margin-bottom: 9px;
+               margin-bottom: 8px;
             }
         }  
+        .span1{
+            width: 14px;
+        }
         .span2{
-            width: 20px;
-            
+            width: 28px;
+        }
+        .span3{
+            width: 42px;
         }
     }
     #navMenu.active{
@@ -67,9 +74,11 @@ body{
         }
         .span1{
             transform: translateY(12px) rotate(45deg);
+            width: 36px;
         }
         .span3{
             transform: translateY(-12px) rotate(-45deg);
+            width: 36px;
         }
     }
 }

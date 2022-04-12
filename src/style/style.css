@@ -12,6 +12,8 @@ body {
 }
 
 .header {
+  display: flex;
+  align-items: center;
   background: #0101014d;
   backdrop-filter: blur(1.7px);
   -webkit-backdrop-filter: blur(1.7px);
@@ -21,35 +23,42 @@ body {
   top: 0;
 }
 .header #navMenu {
-  margin-top: 15px;
-  margin-left: 87vw;
+  margin-left: 85vw;
   transition: all 0.4s ease-in-out;
+  transform: rotate(180deg);
 }
 .header #navMenu .span1,
 .header #navMenu .span2,
 .header #navMenu .span3 {
   display: block;
-  width: 36px;
-  height: 3px;
+  height: 4px;
   background-color: #FFFFFF;
   transition: all 0.4s ease-in-out;
 }
 .header #navMenu .span1:not(:last-child),
 .header #navMenu .span2:not(:last-child),
 .header #navMenu .span3:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+.header #navMenu .span1 {
+  width: 14px;
 }
 .header #navMenu .span2 {
-  width: 20px;
+  width: 28px;
+}
+.header #navMenu .span3 {
+  width: 42px;
 }
 .header #navMenu.active .span2 {
   width: 0;
 }
 .header #navMenu.active .span1 {
   transform: translateY(12px) rotate(45deg);
+  width: 36px;
 }
 .header #navMenu.active .span3 {
   transform: translateY(-12px) rotate(-45deg);
+  width: 36px;
 }
 
 h1 {
