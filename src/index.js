@@ -13,7 +13,7 @@ window.onscroll = function(){
  if(prevScrollPos > currentScrolPos){
      header.style.top='0'
  }else{
-     header.style.top = '-50px'
+     header.style.top = '-100px'
  }
  prevScrollPos = currentScrolPos
 } 
