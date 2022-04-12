@@ -21,7 +21,7 @@ window.onscroll = function(){
 //menu on click
 
 const menuLink = document.getElementById('menuLink');
-navMenu.addEventListener('click',async()=>{
+navMenu.addEventListener('click',()=>{
     header.classList.toggle('menu-container')
     menuLink.classList.toggle('menu-link')
     
