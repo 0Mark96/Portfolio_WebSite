@@ -40,8 +40,41 @@ body{
     width: 100%;
     position: fixed;
     top:0;
+    #navMenu{
+       margin-top: 15px;
+       margin-left:87vw;
+       transition:  all .4s ease-in-out;
+        .span1,
+        .span2,
+        .span3 {
+           display:block;
+           width: 28px;
+           height: 2px;
+           border-radius: 9999px;
+           background-color: $white;
+           transition:  all .4s ease-in-out;
+           &:not(:last-child){
+               margin-bottom: 7px;
+            }
+        }  
+        .span2{
+            width: 18px;
+        }
+    }
+    #navMenu.active{
+        .span2{
+              width: 0;
+        }
+        .span1{
+            transform: translateY(9px) rotate(45deg);
+        }
+        .span3{
+            transform: translateY(-9px) rotate(135deg);
+        }
+    }
 }
-
+    
 h1{
     margin-top: 150px;
 }
+
