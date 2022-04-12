@@ -29,28 +29,27 @@ body {
 .header #navMenu .span2,
 .header #navMenu .span3 {
   display: block;
-  width: 28px;
-  height: 2px;
-  border-radius: 9999px;
+  width: 36px;
+  height: 3px;
   background-color: #FFFFFF;
   transition: all 0.4s ease-in-out;
 }
 .header #navMenu .span1:not(:last-child),
 .header #navMenu .span2:not(:last-child),
 .header #navMenu .span3:not(:last-child) {
-  margin-bottom: 7px;
+  margin-bottom: 9px;
 }
 .header #navMenu .span2 {
-  width: 18px;
+  width: 20px;
 }
 .header #navMenu.active .span2 {
   width: 0;
 }
 .header #navMenu.active .span1 {
-  transform: translateY(9px) rotate(45deg);
+  transform: translateY(12px) rotate(45deg);
 }
 .header #navMenu.active .span3 {
-  transform: translateY(-9px) rotate(135deg);
+  transform: translateY(-12px) rotate(-45deg);
 }
 
 h1 {
