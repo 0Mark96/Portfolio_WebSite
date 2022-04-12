@@ -38,12 +38,12 @@ body{
     background:#0101014d ;
     backdrop-filter: blur(1.7px);
     -webkit-backdrop-filter: blur(1.7px);
-    height: 8vh;
+    height: 9vh;
     width: 100%;
     position: fixed;
     top:0;
     #navMenu{
-       margin-left:85vw;
+       margin-left:83vw;
        transition:  all .4s ease-in-out;
        transform: rotate(180deg);
         .span1,
@@ -59,13 +59,13 @@ body{
             }
         }  
         .span1{
-            width: 14px;
+            width: 16px;
         }
         .span2{
-            width: 28px;
+            width: 32px;
         }
         .span3{
-            width: 42px;
+            width: 48px;
         }
     }
     #navMenu.active{
