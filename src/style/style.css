@@ -11,7 +11,7 @@ body {
   max-width: 100vw;
 }
 
-.header {
+header {
   display: flex;
   align-items: center;
   background: #0101014d;
@@ -21,48 +21,56 @@ body {
   width: 100%;
   position: fixed;
   top: 0;
+  transition: all 0.6s ease-in-out;
 }
-.header #navMenu {
-  margin-left: 83vw;
+header #navMenu {
+  position: absolute;
+  right: 15px;
   transition: all 0.4s ease-in-out;
   transform: rotate(180deg);
 }
-.header #navMenu .span1,
-.header #navMenu .span2,
-.header #navMenu .span3 {
+header #navMenu .span1,
+header #navMenu .span2,
+header #navMenu .span3 {
   display: block;
   height: 4px;
   background-color: #FFFFFF;
   transition: all 0.4s ease-in-out;
 }
-.header #navMenu .span1:not(:last-child),
-.header #navMenu .span2:not(:last-child),
-.header #navMenu .span3:not(:last-child) {
+header #navMenu .span1:not(:last-child),
+header #navMenu .span2:not(:last-child),
+header #navMenu .span3:not(:last-child) {
   margin-bottom: 8px;
 }
-.header #navMenu .span1 {
+header #navMenu .span1 {
   width: 16px;
 }
-.header #navMenu .span2 {
+header #navMenu .span2 {
   width: 32px;
 }
-.header #navMenu .span3 {
+header #navMenu .span3 {
   width: 48px;
 }
-.header #navMenu.active .span2 {
+header #navMenu.active .span2 {
   width: 0;
 }
-.header #navMenu.active .span1 {
+header #navMenu.active .span1 {
   transform: translateY(12px) rotate(45deg);
   width: 42px;
 }
-.header #navMenu.active .span3 {
+header #navMenu.active .span3 {
   transform: translateY(-12px) rotate(-45deg);
   width: 42px;
 }
 
 h1 {
   margin-top: 150px;
+}
+
+img {
+  position: absolute;
+  left: 10px;
+  width: 7vh;
 }
 
 /*# sourceMappingURL=style.css.map */

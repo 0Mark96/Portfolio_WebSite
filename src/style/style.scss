@@ -32,7 +32,7 @@ body{
 
 
 
-.header{
+header{
     display: flex;
     align-items: center;
     background:#0101014d ;
@@ -42,8 +42,10 @@ body{
     width: 100%;
     position: fixed;
     top:0;
+    transition:  all .6s ease-in-out;
     #navMenu{
-       margin-left:83vw;
+       position:absolute;
+       right:15px;
        transition:  all .4s ease-in-out;
        transform: rotate(180deg);
         .span1,
@@ -87,3 +89,8 @@ h1{
     margin-top: 150px;
 }
 
+img{
+    position: absolute;
+    left: 10px;
+    width: 7vh;
+}
