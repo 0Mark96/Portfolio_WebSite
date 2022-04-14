@@ -42,7 +42,7 @@ header{
     width: 100%;
     position: fixed;
     top:0;
-    transition: all .8s ease-in-out;
+    transition: all .5s linear;
     #navMenu{
        position:fixed;
        top:2.5vh;
@@ -92,7 +92,7 @@ header{
     //link
     .nav-link-container{
         margin-top: -100vh;
-        transition:  all .8s ease-in-out;
+        transition:  all .4s linear;
         text-align: center;
         li{
             list-style: none; 
@@ -103,7 +103,7 @@ header{
                 color: $white;
                 font-size: 40px;
                 &:hover{
-                    transition: all .8s ease-in-out;
+                    transition: all .8s linear;
                     color:$blue;
                 }
             }           

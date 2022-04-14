@@ -21,7 +21,7 @@ header {
   width: 100%;
   position: fixed;
   top: 0;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.5s linear;
 }
 header #navMenu {
   position: fixed;
@@ -71,7 +71,7 @@ header img {
 }
 header .nav-link-container {
   margin-top: -100vh;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.4s linear;
   text-align: center;
 }
 header .nav-link-container li {
@@ -84,7 +84,7 @@ header .nav-link-container li a {
   font-size: 40px;
 }
 header .nav-link-container li a:hover {
-  transition: all 0.8s ease-in-out;
+  transition: all 0.8s linear;
   color: #38B6FF;
 }
 
