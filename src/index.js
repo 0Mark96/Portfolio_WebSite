@@ -29,14 +29,14 @@ window.onscroll = function(){
 //menu toggle on click over icon
 navMenu.addEventListener('click',()=>{
     header.classList.toggle('menu-container')
-    navLinkContainer.style.marginTop = navLinkContainer.style.marginTop > '0px' ? '-100vh' : '10vh'
+    navLinkContainer.style.marginTop = navLinkContainer.style.marginTop > '0px' ? '-900px' : '10vh'
 })
 
 //close menu on click over link 
 navLink.forEach (element => {
     element.addEventListener('click',()=>{
     header.classList.toggle('menu-container')
-    navLinkContainer.style.marginTop = navLinkContainer.style.marginTop > '0px' ? '-100vh' : '10vh'
+    navLinkContainer.style.marginTop = navLinkContainer.style.marginTop > '0px' ? '-900px' : '10vh'
     navMenu.classList.toggle('active');
     body.style.overflow = body.style.overflow === 'hidden' ? '' : 'hidden';
 })
