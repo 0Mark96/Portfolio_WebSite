@@ -102,6 +102,7 @@ header{
                 text-decoration: none;
                 color: $white;
                 font-size: 40px;
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
                 &:hover{
                     transition: all .8s linear;
                     color:$blue;
