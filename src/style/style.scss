@@ -26,12 +26,15 @@ $blue:#38B6FF;
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 html body{
     background-color: $black;
     color:$white;
     height: 250vh;
     max-width: 100vw;
+    
 }
 
 // ---------NAVBAR---------------
