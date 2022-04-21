@@ -2,6 +2,10 @@
   font-family: "Font";
   src: url("../../assets/font/Gayathri-Thin.ttf");
 }
+@font-face {
+  font-family: "FontBold";
+  src: url("../../assets/font/Gayathri-Regular.ttf");
+}
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -118,6 +122,7 @@ main {
   justify-content: center;
   height: 100vh;
   position: relative;
+  font-family: "FontBold";
 }
 main .home {
   height: 90%;
@@ -126,7 +131,7 @@ main .home {
 }
 main .home .title {
   position: absolute;
-  top: 20%;
+  top: 18%;
 }
 main .home .title h1 {
   font-size: 9vw;
@@ -136,7 +141,7 @@ main .home .title h1:nth-child(1) {
 }
 main .home .title h1:nth-child(1) .hello {
   color: #38B6FF;
-  font-size: 1.3em;
+  font-size: 1.6em;
 }
 main .home .title h1:nth-child(2) {
   margin-bottom: 4px;

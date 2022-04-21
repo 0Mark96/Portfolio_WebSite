@@ -13,6 +13,11 @@ $blue:#38B6FF;
     src: url('../../assets/font/Gayathri-Thin.ttf');
 
 }
+@font-face {
+    font-family: 'FontBold';
+    src: url('../../assets/font/Gayathri-Regular.ttf');
+
+}
 
 //------------------------------^
 // Mixin flex center
@@ -144,22 +149,25 @@ main{
     justify-content: center;
     height:100vh;
     position:relative;
+    font-family: 'FontBold';
     .home{
         // border: 1px solid $white;
         height: 90%;
         width: 95%;
         position:relative;
+        
         .title {
             // border: 1px solid yellow;
             position: absolute;
-            top:20%;
+            top:18%;
             h1{
                 font-size: 9vw;
+                
                 &:nth-child(1){
                     margin-bottom: -4px;
                     .hello{
                         color: $blue;
-                        font-size: 1.3em;
+                        font-size: 1.6em;
                     }
                 }
                 &:nth-child(2){
