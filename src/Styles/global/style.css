@@ -169,8 +169,39 @@ main img {
   right: 0;
 }
 
-section {
-  height: 100vh;
+.hard-skill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hard-skill .title-sentence {
+  height: 160px;
+  width: 90%;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hard-skill .title-sentence h1 {
+  font-size: 9vw;
+  font-family: "FontBold";
+  color: #38B6FF;
+  align-self: flex-end;
+}
+.hard-skill .title-sentence h3 {
+  font-size: 5vw;
+  text-align: center;
+}
+.hard-skill .skill-container {
+  background: rgba(15, 15, 15, 0.267);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(1.7px);
+  height: 400px;
+  width: 90%;
+  margin-top: 60px;
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
 }
 
 @media screen and (max-height: 414px) {
