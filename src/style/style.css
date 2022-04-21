@@ -119,7 +119,6 @@ main {
   height: 100vh;
 }
 main .home {
-  border: 1px solid #FFFFFF;
   height: 90%;
   width: 95%;
   position: relative;
@@ -158,7 +157,6 @@ main .home .title a i {
 }
 main img {
   position: absolute;
-  background-color: blue;
   width: 60vw;
   height: 60vw;
   bottom: 0;

@@ -144,7 +144,7 @@ main{
     justify-content: center;
     height:100vh;
     .home{
-        border: 1px solid $white;
+        // border: 1px solid $white;
         height: 90%;
         width: 95%;
         position:relative;
@@ -185,7 +185,6 @@ main{
     }
     img{
         position: absolute;
-        background-color: blue;
         width: 60vw;
         height: 60vw;
         bottom:0;
