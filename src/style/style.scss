@@ -7,6 +7,14 @@ $blue:#38B6FF;
 
 //------------------------------^
 
+// FONT
+@font-face {
+    font-family: 'Font';
+    src: url('../font/Gayathri-Thin.ttf');
+
+}
+
+//------------------------------^
 // Mixin flex center
 
 @mixin flexCenter() {
@@ -32,9 +40,8 @@ html{
 html body{
     background-color: $black;
     color:$white;
-    height: 250vh;
     max-width: 100vw;
-    
+    font-family: 'Font';
 }
 
 // ---------NAVBAR---------------
@@ -50,6 +57,7 @@ header{
     position: fixed;
     top:0;
     transition: all .8s linear;
+    z-index:2;
     #navMenu{
        position:fixed;
        top:2.5vh;
@@ -128,6 +136,54 @@ header{
     background-color: $black;
     height: 100vh;
     width: 100vw;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .home{
+        // border: 1px solid $white;
+        height: 90%;
+        width: 95%;
+        position:relative;
+        .title {
+            // border: 1px solid yellow;
+            position: absolute;
+            top:20%;
+            h1{
+                font-size: 9vw;
+                &:nth-child(1){
+                    margin-bottom: -4px;
+                    .hello{
+                        color: $blue;
+                        font-size: 1.6em;
+                    }
+                }
+                &:nth-child(2){
+                    margin-bottom: 4px;
+                }
+                &:nth-child(3){
+                    margin-bottom:45px;
+                }
+            }
+            a{
+              text-decoration: none;
+              color: $blue;
+              font-size: 5vw; 
+              display:inline-flex;
+              i{
+                color: $white;
+                margin-top:1px;
+                margin-left: 7px;
+                font-size: 0.8em;
+              }
+            }
+           
+        }
+        
+    }
 }
 
 @media screen and (max-height: 414px){

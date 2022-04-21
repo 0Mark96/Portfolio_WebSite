@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "Font";
+  src: url("../font/Gayathri-Thin.ttf");
+}
 ::-webkit-scrollbar {
   width: 0px;
 }
@@ -15,8 +19,8 @@ html {
 html body {
   background-color: #010101;
   color: #FFFFFF;
-  height: 250vh;
   max-width: 100vw;
+  font-family: "Font";
 }
 
 header {
@@ -30,6 +34,7 @@ header {
   position: fixed;
   top: 0;
   transition: all 0.8s linear;
+  z-index: 2;
 }
 header #navMenu {
   position: fixed;
@@ -104,6 +109,51 @@ header .nav-link-container li a:hover {
   background-color: #010101;
   height: 100vh;
   width: 100vw;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+main .home {
+  height: 90%;
+  width: 95%;
+  position: relative;
+}
+main .home .title {
+  position: absolute;
+  top: 20%;
+}
+main .home .title h1 {
+  font-size: 9vw;
+}
+main .home .title h1:nth-child(1) {
+  margin-bottom: -4px;
+}
+main .home .title h1:nth-child(1) .hello {
+  color: #38B6FF;
+  font-size: 1.6em;
+}
+main .home .title h1:nth-child(2) {
+  margin-bottom: 4px;
+}
+main .home .title h1:nth-child(3) {
+  margin-bottom: 45px;
+}
+main .home .title a {
+  text-decoration: none;
+  color: #38B6FF;
+  font-size: 5vw;
+  display: inline-flex;
+}
+main .home .title a i {
+  color: #FFFFFF;
+  margin-top: 1px;
+  margin-left: 7px;
+  font-size: 0.8em;
 }
 
 @media screen and (max-height: 414px) {
