@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Font";
-  src: url("../font/Gayathri-Thin.ttf");
+  src: url("../../assets/font/Gayathri-Thin.ttf");
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -117,6 +117,7 @@ main {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  position: relative;
 }
 main .home {
   height: 90%;
@@ -149,10 +150,10 @@ main .home .title a {
   font-size: 5vw;
   display: inline-flex;
 }
-main .home .title a i {
+main .home .title a .fa-forward {
   color: #FFFFFF;
-  margin-top: 2.5px;
-  margin-left: 7px;
+  margin-top: 3px;
+  margin-left: 11px;
   font-size: 0.7em;
 }
 main img {

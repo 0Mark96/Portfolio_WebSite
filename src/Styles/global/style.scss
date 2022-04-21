@@ -10,7 +10,7 @@ $blue:#38B6FF;
 // FONT
 @font-face {
     font-family: 'Font';
-    src: url('../font/Gayathri-Thin.ttf');
+    src: url('../../assets/font/Gayathri-Thin.ttf');
 
 }
 
@@ -143,6 +143,7 @@ main{
     align-items: center;
     justify-content: center;
     height:100vh;
+    position:relative;
     .home{
         // border: 1px solid $white;
         height: 90%;
@@ -173,10 +174,10 @@ main{
               color: $blue;
               font-size: 5vw; 
               display:inline-flex;
-              i{
+              .fa-forward{
                 color: $white;
-                margin-top:2.5px;
-                margin-left: 7px;
+                margin-top:3px;
+                margin-left: 11px;
                 font-size: 0.7em;
               }
             }
@@ -189,7 +190,7 @@ main{
         height: 60vw;
         bottom:0;
         right: 0;
-        }            
+        }      
 }
 section{
     height: 100vh;
