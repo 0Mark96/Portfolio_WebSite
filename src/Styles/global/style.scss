@@ -240,7 +240,12 @@ main{
      h3{
         font-size: 5vw;
         margin-top:60px;
-        margin-left:20px;
+        margin-left:5px;
+        span{
+            color: $blue;
+            margin-right: 10px;
+            margin-left: 15px;
+        }
      }
     .languages{
         // border: 1px solid blue;
@@ -259,26 +264,27 @@ main{
         .progress-bar{
             width: 100%;
             height: 6px;
-            background-color: rgb(255, 255, 255);
+            // background-color: rgb(255, 255, 255);
             margin-top:5px;
-            border-radius: 20px;
+            // border-radius: 20px;
+            border: 1px solid $blue;
             .html-progress{
                 height: 100%;
                 width: 80%;
                 background-color: $blue;
-                border-radius: 20px;
+                // border-radius: 20px;
             }
             .css-progress{
                 height: 100%;
                 width: 80%;
                 background-color: $blue;
-                border-radius: 20px;
+                // border-radius: 20px;
             }
             .js-progress{
                 height: 100%;
                 width: 60%;
                 background-color: $blue;
-                border-radius: 20px;
+                // border-radius: 20px;
             }
         }
     }
