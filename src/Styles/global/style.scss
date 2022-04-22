@@ -267,7 +267,8 @@ main{
             // background-color: rgb(255, 255, 255);
             margin-top:5px;
             // border-radius: 20px;
-            border: 1px solid $blue;
+            border-right: 1px solid $blue;
+            border-bottom: 1px solid $blue;
             .html-progress{
                 height: 100%;
                 width: 80%;
