@@ -1,7 +1,6 @@
 $white: #FFFFFF;
 
 #wrapper {
-    // background-color: blue;
     position: absolute;
     width:auto;
     height:220px;
@@ -54,5 +53,24 @@ $white: #FFFFFF;
           transform-origin: 0% 100%;
           transform: scale(1, 0);
       }
+  }
+
+  @media screen and (min-width: 500px){
+    #scroll-title {
+        font-size:3vw;
+        margin-left:60px;
+        margin-top:0;
+    }
+    #wrapper {
+        left:0px;
+      }
+  }
+  @media  screen and (min-width: 1024px){
+      #wrapper{
+          bottom: 0px;
+      }
+      #scroll-title {
+        font-size:25px;
+    }
   }
  

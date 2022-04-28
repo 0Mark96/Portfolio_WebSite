@@ -1,4 +1,4 @@
-// -------------------------------------------------Header-------------------------------------
+// -------------------------------------------------Header effect mobile-------------------------------------
 const navMenu = document.getElementById('navMenu');
 const body = document.querySelector('body');
 const header = document.querySelector('header')
@@ -15,6 +15,7 @@ navMenu.addEventListener('click', ()=>{
 })
 
 // hide header onScroll
+
 let prevScrollPos = window.pageYOffset
 window.onscroll = function(){
  let currentScrolPos = window.pageYOffset
@@ -41,6 +42,7 @@ navLink.forEach (element => {
     body.style.overflow = body.style.overflow === 'hidden' ? '' : 'hidden';
 })
 })
+
 
 
 

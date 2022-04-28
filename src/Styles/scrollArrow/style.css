@@ -54,5 +54,25 @@
     transform: scale(1, 0);
   }
 }
+@media screen and (min-width: 500px) {
+  #scroll-title {
+    font-size: 3vw;
+    margin-left: 60px;
+    margin-top: 0;
+  }
+
+  #wrapper {
+    left: 0px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #wrapper {
+    bottom: 0px;
+  }
+
+  #scroll-title {
+    font-size: 25px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

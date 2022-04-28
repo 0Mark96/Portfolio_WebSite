@@ -7,6 +7,16 @@ $blue:#38B6FF;
 
 //------------------------------^
 
+// FONT SIZE
+$h1Size:9vw;
+$h3Size:5vw;
+$h4Size:4vw;
+//tablet
+$h1Tsize:8vw;
+$h3Tsize:4vw;
+$h4Tsize:3vw;
+//------------------------------^
+
 // FONT
 @font-face {
     font-family: 'Font';
@@ -18,7 +28,6 @@ $blue:#38B6FF;
     src: url('../../assets/font/Gayathri-Regular.ttf');
 
 }
-
 //------------------------------^
 
 // Mixin flex center
@@ -112,10 +121,11 @@ header{
     }
     //link
     .nav-link-container{
-        margin-top: -500px;
+        margin-top: -900px;
         transition:  all .8s ease-out;
         text-align: center;
         overflow-y:auto;
+        font-family: 'FontBold';
         li{
             list-style: none; 
             margin: 3em;
@@ -123,16 +133,14 @@ header{
             a{
                 text-decoration: none;
                 color: $white;
-                font-size: 40px;
+                // font-size: 30px;
                 -webkit-tap-highlight-color: rgba(0,0,0,0);
                 &:hover{
                     transition: all .8s linear;
                     color:$blue;
                 }
             }           
-        }  
-        
-       
+        }     
     }
 }
     
@@ -149,21 +157,20 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:100vh;
+    height:650px;
     position:relative;
     font-family: 'FontBold';
     .home{
-        // border: 1px solid $white;
         height: 90%;
         width: 95%;
         position:relative;
         
         .title {
-            // border: 1px solid yellow;
-            position: absolute;
+            position: relative;
             top:18%;
+            width: auto;
             h1{
-                font-size: 9vw;
+                font-size: $h1Size;
                 
                 &:nth-child(1){
                     margin-bottom: -4px;
@@ -182,7 +189,7 @@ main{
             a{
               text-decoration: none;
               color: $blue;
-              font-size: 5vw; 
+              font-size: $h3Size; 
               display:inline-flex;
               .fa-forward{
                 color: $white;
@@ -192,6 +199,9 @@ main{
               }
             }
            
+        }
+        .laptopHeader{
+            display:none;
         }
     }
     img{
@@ -209,21 +219,19 @@ main{
     @include flexCenter();
     flex-direction: column;
     .title-sentence{
-        // background-color: blue;
-        height: 160px;
         width: 90%;
         margin-top: 70px;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         h1{
-            font-size:9vw;
+            font-size:$h1Size;
             font-family: 'FontBold';
             color: $blue;
             align-self:flex-end;
         }
         h3{
-            font-size: 5vw;
+            margin-top:40px;
+            font-size: $h3Size;
             text-align: center;
         }
     }
@@ -233,12 +241,11 @@ main{
      -webkit-backdrop-filter: blur(5px);
      height:auto;
      width: 95%;
-     max-width: 600px;
      margin-top: 60px;
      border-top:1px solid $white;
      border-bottom: 1px solid $white;
      h3{
-        font-size: 5vw;
+        font-size: $h3Size;
         margin-top:60px;
         margin-left:5px;
         span{
@@ -247,7 +254,7 @@ main{
             margin-left: 15px;
         }
      }
-    .languages{
+    .list{
         // border: 1px solid blue;
         position: relative;
         width: 95%;
@@ -258,34 +265,52 @@ main{
         // justify-content: space-between;
         grid-template-columns: 1fr 2fr;
         gap:30px;
-        .html{
-            font-size: 5vh;
-        }
+        font-size: $h4Size;
         .progress-bar{
             width: 100%;
             height: 6px;
-            // background-color: rgb(255, 255, 255);
             margin-top:5px;
-            // border-radius: 20px;
             border-right: 1px solid $blue;
             border-bottom: 1px solid $blue;
             .html-progress{
                 height: 100%;
-                width: 80%;
+                width: 90%;
                 background-color: $blue;
-                // border-radius: 20px;
             }
             .css-progress{
                 height: 100%;
                 width: 80%;
                 background-color: $blue;
-                // border-radius: 20px;
             }
             .js-progress{
                 height: 100%;
-                width: 60%;
+                width: 75%;
                 background-color: $blue;
-                // border-radius: 20px;
+            }
+            .react-progress{
+                height: 100%;
+                width: 40%;
+                background-color: $blue;
+            }
+            .bootstrap-progress{
+                height: 100%;
+                width: 70%;
+                background-color: $blue;
+            }
+            .sass-progress{
+                height: 100%;
+                width: 80%;
+                background-color: $blue;
+            }
+            .webpack-progress{
+                height: 100%;
+                width: 40%;
+                background-color: $blue;
+            }
+            .github-progress{
+                height: 100%;
+                width: 70%;
+                background-color: $blue;
             }
         }
     }
@@ -295,13 +320,169 @@ main{
 
 
 
-@media screen and (max-height: 414px){
+@media screen and (max-height: 428px){
     header {
         height:13vh;
     }
 }
 
+@media screen and (min-width: 500px){
+ 
+    .nav-link-container{
+            a{
+                font-size:4.5vw; 
+            }           
+        }  
 
+    main{
+        height: 1150px;
+        .home {
+            .title {
+               h1{
+                font-size: $h1Tsize;
+               }
+               a{
+                font-size: $h3Tsize;
+               }
+            }
+        }
+        img{
+            width: 50vw;
+            height: 50vw;
+        }
+    }
+    
+    .hard-skill {
+        .title-sentence {
+            h1{
+            font-size: $h1Tsize;
+            }
+        
+            h3{
+            font-size: $h3Tsize;
+            }
+        }
+        .skill-container{
+            width: 80%;
+            h3{
+                font-size: $h3Tsize;
+            }
+            .list{
+                font-size: $h4Tsize;
+            }
+        }
+    }
+      
+}
+
+
+
+@media  screen and (min-width: 1025px){
+    body{
+        // background-color: yellow !important;
+    }
+    header{
+      display:none;
+
+    }
+    
+    main{
+        height: 100vh;
+        .home {
+            border: 1px solid $white;
+            height: 85%;
+            width: 90%;
+            margin-top:0%;
+            .laptopHeader{
+                display:block;
+                height:50px;
+                width: 100%;
+                position:relative;
+                ul{
+                    display:inline-flex;
+                    position:absolute;
+                    right:2em;
+                    text-decoration: none;
+                    list-style: none;
+                    height: 100%;
+                    display: flex;
+                    
+                    li{
+                        margin: 0.5em;
+                        margin-left:2em;
+                         a{
+                            text-decoration: none;
+                            color: $white;
+                            font-size: 30px;
+                            -webkit-tap-highlight-color: rgba(0,0,0,0);
+                            &:hover{
+                                transition: all .8s linear;
+                                color:$blue;
+                            }
+                        }
+                    }
+                }
+                img{
+                    position: absolute;
+                    top:-40px;
+                    left: -40px;
+                    width:auto ;
+                    height:180%;
+                }
+            }
+            .title {
+                top:10% ;
+                h1{
+                  font-size: 50px;
+                  margin-left: 5%;
+                }
+                a{
+                  font-size: 30px;
+                  margin-top:70px;
+                  margin-left:250px;
+                }
+            }
+        }
+        img{
+            width: 55vh;
+            height: 55vh;
+        }
+    }
+    .hard-skill {
+        .title-sentence {
+            margin-top:100px;
+            width: 80%;
+            h1{
+            font-size: 55px;
+            }
+        
+            h3{
+            font-size: 28px;
+            width: 50%;
+            }
+        }
+        .skill-container{
+            margin-top:100px;
+            width: 35%;
+           h3{
+                font-size: 28px;
+            }
+            .list{
+                font-size:22px;
+            }
+        } 
+        .skill-1{
+        align-self: flex-end;
+        margin-bottom:-300px;
+        margin-right: 150px;
+        }
+       .skill-2{
+        align-self: flex-start;
+        margin-left: 150px;
+        }
+    }
+   
+}
   
 
 //---------------------------------------------
