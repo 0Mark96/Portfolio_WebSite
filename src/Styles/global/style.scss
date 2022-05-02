@@ -340,22 +340,51 @@ main{
             text-align: center;
         }
     }
+    // .project-container{
+    //     margin-top: 60px;
+    //     height: auto;
+    //     display: grid;
+    //     grid-template-columns: repeat(auto-fill, minmax(80vw, 1fr));
+    //     grid-gap: 0.5rem;
+    //     .project{
+    //         background-image: url('../../assets/img/pexels-jermaine-ulinwa-4129015.jpg');
+    //         background-size: cover;
+    //         width: 100%;
+    //         height: 55vw;
+    //     }
+    // }
     .project-container{
-        margin-top: 60px;
-        height: auto;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(80vw, 1fr));
-        grid-gap: 0.5rem;
+       
+       padding:20px;
+       width: 100vw;
+       max-width: 1200px;
+       margin: 0 auto;
+       margin-top: 40px;
+
+       display:grid;
+       grid-gap: 20px;
+       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         .project{
-            background-image: url('../../assets/img/pexels-jermaine-ulinwa-4129015.jpg');
-            background-size: cover;
+            position: relative;
+            img{
             width: 100%;
-            height: 55vw;
-        }
+            }  
+            .cont-over-img{
+            position:absolute;
+            top:0;
+            height: 100%;
+            width:100%;
+            transition: all 1s linear;
+            }
+        } 
     }
 }
 
-
+.transp-background{
+            background:rgba(15, 15, 15, 0.692);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+}
 
 
 
@@ -422,17 +451,13 @@ main{
             }
         
             h3{
-            margin-top: 50px;
+            margin-top: 80px;
             font-size: $h3Tsize;
             }
         }
         .project-container{
-            margin-top: 130px;
-            width: 80%;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            .project{
-             height: 250px;
-            }
+            margin-top: 80px;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         }
     }
 }
@@ -440,9 +465,6 @@ main{
 
 
 @media  screen and (min-width: 1025px){
-    body{
-        // background-color: yellow !important;
-    }
     header{
       display:none;
 
@@ -560,8 +582,7 @@ main{
             }
         }
         .project-container{
-            margin-top: 150px;
-            width: 70%;
+            margin-top: 100px;
         }
     }
 }

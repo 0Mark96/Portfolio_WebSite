@@ -43,6 +43,25 @@ navLink.forEach (element => {
 })
 })
 
+//------------------------------PORTFOLIO-------------
+
+// click over project
+
+const projectItem = document.querySelectorAll('.project')
+const ContOverImg = document.querySelectorAll('.cont-over-img')
+
+
+
+ContOverImg.forEach((item)=>{
+  item.addEventListener('click',()=>{
+      item.classList.add('transp-background')
+      setTimeout(()=>{
+         location.href='../index.html#skill' 
+      },1500)
+      
+  })
+})
+
 
 
 
