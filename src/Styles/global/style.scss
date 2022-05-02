@@ -225,7 +225,7 @@ main{
         display: flex;
         flex-direction: column;
         h1{
-            font-size:$h1Size;
+            font-size:$h1Size + 2vw;
             font-family: 'FontBold';
             color: $blue;
             align-self:flex-end;
@@ -274,44 +274,100 @@ main{
             border-right: 1px solid $blue;
             border-bottom: 1px solid $blue;
             .html-progress{
+                position:relative;
                 height: 100%;
-                width: 90%;
-                background-color: $blue;
+                width: 90%; 
+                .progress{
+                    position:absolute;
+                    left:0;
+                    height: 100%;
+                    background-color: $blue;
+                    transition: width 1s ease;
+                }             
             }
             .css-progress{
+                position: relative;
                 height: 100%;
                 width: 80%;
-                background-color: $blue;
+                .progress{
+                    position:absolute;
+                    left:0;
+                    height: 100%;
+                    background-color: $blue;
+                    transition: width 1s ease;
+                }  
             }
             .js-progress{
+                position: relative;
                 height: 100%;
                 width: 75%;
-                background-color: $blue;
+                .progress{
+                    position:absolute;
+                    left:0;
+                    height: 100%;
+                    background-color: $blue;
+                    transition: width 1s ease;
+                }  
             }
             .react-progress{
+                position:relative;
                 height: 100%;
                 width: 40%;
-                background-color: $blue;
+                .progress{
+                    position:absolute;
+                    left:0;
+                    height: 100%;
+                    background-color: $blue;
+                    transition: width 1s ease;
+                }   
             }
             .bootstrap-progress{
+                position: relative;
                 height: 100%;
                 width: 70%;
-                background-color: $blue;
+                .progress{
+                    position:absolute;
+                    left:0;
+                    height: 100%;
+                    background-color: $blue;
+                    transition: width 1s ease;
+                }  
             }
             .sass-progress{
+                position:relative;
                 height: 100%;
                 width: 80%;
-                background-color: $blue;
+                .progress{
+                    position:absolute;
+                    left:0;
+                    height: 100%;
+                    background-color: $blue;
+                    transition: width 1s ease;
+                }  
             }
             .webpack-progress{
+                position:relative;
                 height: 100%;
                 width: 40%;
-                background-color: $blue;
+                .progress{
+                    position:absolute;
+                    left:0;
+                    height: 100%;
+                    background-color: $blue;
+                    transition: width 1s ease;
+                }  
             }
             .github-progress{
+                position:relative;
                 height: 100%;
                 width: 70%;
-                background-color: $blue;
+                .progress{
+                    position:absolute;
+                    left:0;
+                    height: 100%;
+                    background-color: $blue;
+                    transition: width 1s ease;
+                }  
             }
         }
     }
@@ -330,7 +386,7 @@ main{
         display: flex;
         flex-direction: column;
         h1{
-            font-size:$h1Size;
+            font-size:$h1Size + 2vw;
             font-family: 'FontBold';
             color: $blue;
             align-self:flex-end;
@@ -356,7 +412,7 @@ main{
         .project{
             position: relative;
             transform: translateX(-400%);
-            transition: transform .5s ease;
+            transition: transform .6s ease;
             
             img{
             width: 100%;
@@ -421,7 +477,7 @@ main{
     .hard-skill {
         .title-sentence {
             h1{
-            font-size: $h1Tsize;
+            font-size: $h1Tsize + 1vw;
             }
         
             h3{
@@ -442,7 +498,7 @@ main{
         margin-top: 80px;
         .title-sentence {
             h1{
-            font-size: $h1Tsize;
+            font-size: $h1Tsize +1vw;
             }
         
             h3{

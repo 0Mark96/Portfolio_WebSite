@@ -1,4 +1,4 @@
-// -------------------------------------------------Header effect mobile-------------------------------------
+// ------------------------------------Header effect mobile-------------------------------------
 const navMenu = document.getElementById('navMenu');
 const body = document.querySelector('body');
 const header = document.querySelector('header')
@@ -42,6 +42,30 @@ navLink.forEach (element => {
     body.style.overflow = body.style.overflow === 'hidden' ? '' : 'hidden';
 })
 })
+
+//--------------------------Skill--------
+
+// move progress bar
+
+const progress = document.querySelectorAll('.progress')
+console.log(progress)
+window.addEventListener('scroll', checkProgress)
+
+
+function checkProgress(){
+    const triggerBottom = window.innerHeight /5 * 4
+    
+    progress.forEach((item)=>{
+        const itemTop = item.getBoundingClientRect().top
+
+        if(itemTop < triggerBottom){
+          item.style.width='100%'
+        }else{
+          item.style.width='0%'
+        }
+    })
+}
+
 
 //------------------------------PORTFOLIO-------------
 
