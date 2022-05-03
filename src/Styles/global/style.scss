@@ -189,6 +189,7 @@ main{
             }
             a{
               text-decoration: none;
+              -webkit-tap-highlight-color: rgba(0,0,0,0);
               color: $blue;
               font-size: $h3Size; 
               display:inline-flex;
@@ -276,7 +277,7 @@ main{
             .html-progress{
                 position:relative;
                 height: 100%;
-                width: 90%; 
+                width: 95%; 
                 .progress{
                     position:absolute;
                     left:0;
@@ -288,7 +289,7 @@ main{
             .css-progress{
                 position: relative;
                 height: 100%;
-                width: 80%;
+                width: 90%;
                 .progress{
                     position:absolute;
                     left:0;
@@ -300,7 +301,7 @@ main{
             .js-progress{
                 position: relative;
                 height: 100%;
-                width: 75%;
+                width: 80%;
                 .progress{
                     position:absolute;
                     left:0;
@@ -312,7 +313,7 @@ main{
             .react-progress{
                 position:relative;
                 height: 100%;
-                width: 40%;
+                width: 60%;
                 .progress{
                     position:absolute;
                     left:0;
@@ -336,7 +337,7 @@ main{
             .sass-progress{
                 position:relative;
                 height: 100%;
-                width: 80%;
+                width: 90%;
                 .progress{
                     position:absolute;
                     left:0;
@@ -348,7 +349,7 @@ main{
             .webpack-progress{
                 position:relative;
                 height: 100%;
-                width: 40%;
+                width: 50%;
                 .progress{
                     position:absolute;
                     left:0;
@@ -360,7 +361,7 @@ main{
             .github-progress{
                 position:relative;
                 height: 100%;
-                width: 70%;
+                width: 80%;
                 .progress{
                     position:absolute;
                     left:0;
@@ -389,7 +390,7 @@ main{
             font-size:$h1Size + 2vw;
             font-family: 'FontBold';
             color: $blue;
-            align-self:flex-end;
+            align-self:flex-start;
         }
         h3{
             margin-top:40px;
@@ -411,8 +412,8 @@ main{
        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         .project{
             position: relative;
-            transform: translateX(-400%);
-            transition: transform .6s ease;
+            transform: rotate(90deg) rotateY(90deg);
+            transition: transform 1s ease;
             
             img{
             width: 100%;
@@ -426,7 +427,7 @@ main{
             }
         } 
         .show-project{
-         transform: translateX(0);
+        transform: rotate(0) rotateY(0);
         }
     }
 }
@@ -438,13 +439,73 @@ main{
 }
 
 
+//---------FOOTER--------------
 
+footer{
+    background:rgba(15, 15, 15, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-top: 1px solid $white;
+    height: auto;
+    margin-top: 80px;
+    
+   display:flex;
+   align-items: center;
+   flex-direction: column;
+   img{
+       margin-top: 10%;
+       width: 25%;
+       height: auto;
+    }
+    h3{
+        margin-top:15%;
+        font-size: $h3Size;
+        text-align: center;
+        width: 90%;
+    }
+    .container-link-contact{
+        margin-top: 27%;
+        margin-bottom:17%;
+        display:inline-flex;
+        justify-content: space-around;
+        width: 100%;
+        .contact-link{
+            text-decoration: none;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            color: $blue;
+            font-size: $h3Size; 
+            display:inline-flex;
+            transform: rotate(90deg) rotateY(90deg);
+            transition: transform 1s ease;
+            .fa-forward{
+              color: $white;
+              margin-top:3px;
+              margin-left: 11px;
+              font-size: 0.7em;
+            }
+        }
+        .contact-link-animation{
+            transform: rotate(0) rotateY(0);
+        }
+        .go-on-top {
+            text-decoration: none;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            color: $blue;
+            font-size: $h3Size; 
+            .fa-forward{
+               color: $white;
+               transform:rotate(-90deg)
+            }
+        } 
+    }
+    
+}
 
 //---------------MEDIA QUERRY---------------------
 
 @media screen and (max-height: 428px){
     header {
-        height:13vh;
+        height:18vh;
     }
 }
 
@@ -509,6 +570,34 @@ main{
         .project-container{
             margin-top: 80px;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        }
+    }
+
+    footer{
+        margin-top: 80px;
+        img{
+        width: 16%;
+        }
+        h3{
+            margin-top: 16%;
+            font-size: $h3Tsize;
+            width:80%;
+        }
+        .container-link-contact{
+          margin-top: 20%;
+          .contact-link{
+              font-size: $h3Tsize; 
+              display:inline-flex;
+              .fa-forward{
+                color: $white;
+                margin-top:4px;
+                margin-left: 20px;
+                font-size: 0.7em;
+              }
+          }
+          .go-on-top {
+            font-size: $h3Tsize; 
+          } 
         }
     }
 }
@@ -600,7 +689,7 @@ main{
             }
         }
         .skill-container{
-            margin-top:100px;
+            margin-top:140px;
             width: 35%;
            h3{
                 font-size: 30px;
@@ -621,21 +710,55 @@ main{
     }
     .portfolio-section {
         .title-sentence {
-            margin-top:100px;
+            margin-top:0px;
             width: 80%;
             h1{
             font-size: 70px;
+            align-self: flex-end;
             }
         
             h3{
-            font-size: 28px;
+            margin-top: 90px;
+            font-size: 30px;
             width: 50%;
+            
             }
         }
         .project-container{
             max-width: 1200px;
             margin-top: 100px;
         }
+    }
+
+    footer{
+        margin-top: 80px;
+        img{
+            margin-top: 5%;
+            width: 10%;
+            }
+        h3{
+            margin-top: 5%;
+            font-size: 30px;
+            width: 50%;
+        }
+        .container-link-contact{
+            margin-top: 8%;
+            margin-bottom:5%;
+            .contact-link{
+                font-size: 40px; 
+                display:inline-flex;
+                .fa-forward{
+                  color: $white;
+                  margin-top:4px;
+                  margin-left: 20px;
+                  font-size: 0.7em;
+                }
+            }
+            .go-on-top {
+              font-size: 50px; 
+            } 
+        }
+        
     }
 }
   

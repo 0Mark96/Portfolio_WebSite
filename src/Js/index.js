@@ -1,4 +1,4 @@
-// ------------------------------------Header effect mobile-------------------------------------
+// ----------------------Header effect mobile-------------------------------------
 const navMenu = document.getElementById('navMenu');
 const body = document.querySelector('body');
 const header = document.querySelector('header')
@@ -43,31 +43,8 @@ navLink.forEach (element => {
 })
 })
 
-//--------------------------Skill--------
 
-// move progress bar
-
-const progress = document.querySelectorAll('.progress')
-console.log(progress)
-window.addEventListener('scroll', checkProgress)
-
-
-function checkProgress(){
-    const triggerBottom = window.innerHeight /5 * 4
-    
-    progress.forEach((item)=>{
-        const itemTop = item.getBoundingClientRect().top
-
-        if(itemTop < triggerBottom){
-          item.style.width='100%'
-        }else{
-          item.style.width='0%'
-        }
-    })
-}
-
-
-//------------------------------PORTFOLIO-------------
+//------------PORTFOLIO-------------
 
 // click over project
 const ContOverImg = document.querySelectorAll('.cont-over-img')
@@ -82,28 +59,54 @@ ContOverImg.forEach((item)=>{
   })
 })
 
-// move project item on SCROLL
-const projectItem = document.querySelectorAll('.project')
-
-window.addEventListener('scroll', checkProject)
 
 
-function checkProject(){
-    const triggerBottom = window.innerHeight /5 * 4
+// --------ANIMATION ON SCROLL EVENT-------------------------------
+
+
+window.addEventListener('scroll', checkItemOnScroll)
+
+function checkItemOnScroll(){
+    const triggerBottom = window.innerHeight /4.3 * 4
+
     
+    //---SKILL---move progress bar--
+    const progress = document.querySelectorAll('.progress')
+    progress.forEach((item)=>{
+        const itemTop = item.getBoundingClientRect().top
+
+        if(itemTop < triggerBottom){
+          item.style.width='100%'
+        }else{
+          item.style.width='0%'
+        }
+    })
+
+    //---PORTFOLIO----move project
+    const projectItem = document.querySelectorAll('.project')
     projectItem.forEach((item)=>{
         const itemTop = item.getBoundingClientRect().top
 
         if(itemTop < triggerBottom){
           item.classList.add('show-project')
         }else{
-            item.classList.remove('show-project')
+        item.classList.remove('show-project')
         }
     })
+
+    //---FOOTER---contact-me-link
+    // const triggerBottomForFooter = window.innerHeight
+    const contactMeLink = document.getElementById('contactLink')
+    const contactMeTop = contactMeLink.getBoundingClientRect().top
+
+    if(contactMeTop < triggerBottom){
+        contactMeLink.classList.add('contact-link-animation')
+      }else{
+      contactMeLink.classList.remove('contact-link-animation')
+      }
+
+
 }
-
-
-
 
 
 

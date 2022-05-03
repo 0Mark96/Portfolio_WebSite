@@ -153,6 +153,7 @@ main .home .title h1:nth-child(3) {
 }
 main .home .title a {
   text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   color: #38B6FF;
   font-size: 5vw;
   display: inline-flex;
@@ -238,7 +239,7 @@ main img {
 .hard-skill .skill-container .list .progress-bar .html-progress {
   position: relative;
   height: 100%;
-  width: 90%;
+  width: 95%;
 }
 .hard-skill .skill-container .list .progress-bar .html-progress .progress {
   position: absolute;
@@ -250,7 +251,7 @@ main img {
 .hard-skill .skill-container .list .progress-bar .css-progress {
   position: relative;
   height: 100%;
-  width: 80%;
+  width: 90%;
 }
 .hard-skill .skill-container .list .progress-bar .css-progress .progress {
   position: absolute;
@@ -262,7 +263,7 @@ main img {
 .hard-skill .skill-container .list .progress-bar .js-progress {
   position: relative;
   height: 100%;
-  width: 75%;
+  width: 80%;
 }
 .hard-skill .skill-container .list .progress-bar .js-progress .progress {
   position: absolute;
@@ -274,7 +275,7 @@ main img {
 .hard-skill .skill-container .list .progress-bar .react-progress {
   position: relative;
   height: 100%;
-  width: 40%;
+  width: 60%;
 }
 .hard-skill .skill-container .list .progress-bar .react-progress .progress {
   position: absolute;
@@ -298,7 +299,7 @@ main img {
 .hard-skill .skill-container .list .progress-bar .sass-progress {
   position: relative;
   height: 100%;
-  width: 80%;
+  width: 90%;
 }
 .hard-skill .skill-container .list .progress-bar .sass-progress .progress {
   position: absolute;
@@ -310,7 +311,7 @@ main img {
 .hard-skill .skill-container .list .progress-bar .webpack-progress {
   position: relative;
   height: 100%;
-  width: 40%;
+  width: 50%;
 }
 .hard-skill .skill-container .list .progress-bar .webpack-progress .progress {
   position: absolute;
@@ -322,7 +323,7 @@ main img {
 .hard-skill .skill-container .list .progress-bar .github-progress {
   position: relative;
   height: 100%;
-  width: 70%;
+  width: 80%;
 }
 .hard-skill .skill-container .list .progress-bar .github-progress .progress {
   position: absolute;
@@ -348,7 +349,7 @@ main img {
   font-size: 11vw;
   font-family: "FontBold";
   color: #38B6FF;
-  align-self: flex-end;
+  align-self: flex-start;
 }
 .portfolio-section .title-sentence h3 {
   margin-top: 40px;
@@ -367,8 +368,8 @@ main img {
 }
 .portfolio-section .project-container .project {
   position: relative;
-  transform: translateX(-400%);
-  transition: transform 0.6s ease;
+  transform: rotate(90deg) rotateY(90deg);
+  transition: transform 1s ease;
 }
 .portfolio-section .project-container .project img {
   width: 100%;
@@ -381,7 +382,7 @@ main img {
   transition: all 1s linear;
 }
 .portfolio-section .project-container .show-project {
-  transform: translateX(0);
+  transform: rotate(0) rotateY(0);
 }
 
 .transp-background {
@@ -390,9 +391,67 @@ main img {
   -webkit-backdrop-filter: blur(5px);
 }
 
+footer {
+  background: rgba(15, 15, 15, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-top: 1px solid #FFFFFF;
+  height: auto;
+  margin-top: 80px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+footer img {
+  margin-top: 10%;
+  width: 25%;
+  height: auto;
+}
+footer h3 {
+  margin-top: 15%;
+  font-size: 5vw;
+  text-align: center;
+  width: 90%;
+}
+footer .container-link-contact {
+  margin-top: 27%;
+  margin-bottom: 17%;
+  display: inline-flex;
+  justify-content: space-around;
+  width: 100%;
+}
+footer .container-link-contact .contact-link {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #38B6FF;
+  font-size: 5vw;
+  display: inline-flex;
+  transform: rotate(90deg) rotateY(90deg);
+  transition: transform 1s ease;
+}
+footer .container-link-contact .contact-link .fa-forward {
+  color: #FFFFFF;
+  margin-top: 3px;
+  margin-left: 11px;
+  font-size: 0.7em;
+}
+footer .container-link-contact .contact-link-animation {
+  transform: rotate(0) rotateY(0);
+}
+footer .container-link-contact .go-on-top {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #38B6FF;
+  font-size: 5vw;
+}
+footer .container-link-contact .go-on-top .fa-forward {
+  color: #FFFFFF;
+  transform: rotate(-90deg);
+}
+
 @media screen and (max-height: 428px) {
   header {
-    height: 13vh;
+    height: 18vh;
   }
 }
 @media screen and (min-width: 500px) {
@@ -443,6 +502,34 @@ main img {
   .portfolio-section .project-container {
     margin-top: 80px;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+
+  footer {
+    margin-top: 80px;
+  }
+  footer img {
+    width: 16%;
+  }
+  footer h3 {
+    margin-top: 16%;
+    font-size: 4vw;
+    width: 80%;
+  }
+  footer .container-link-contact {
+    margin-top: 20%;
+  }
+  footer .container-link-contact .contact-link {
+    font-size: 4vw;
+    display: inline-flex;
+  }
+  footer .container-link-contact .contact-link .fa-forward {
+    color: #FFFFFF;
+    margin-top: 4px;
+    margin-left: 20px;
+    font-size: 0.7em;
+  }
+  footer .container-link-contact .go-on-top {
+    font-size: 4vw;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -527,7 +614,7 @@ main img {
     width: 50%;
   }
   .hard-skill .skill-container {
-    margin-top: 100px;
+    margin-top: 140px;
     width: 35%;
   }
   .hard-skill .skill-container h3 {
@@ -547,19 +634,51 @@ main img {
   }
 
   .portfolio-section .title-sentence {
-    margin-top: 100px;
+    margin-top: 0px;
     width: 80%;
   }
   .portfolio-section .title-sentence h1 {
     font-size: 70px;
+    align-self: flex-end;
   }
   .portfolio-section .title-sentence h3 {
-    font-size: 28px;
+    margin-top: 90px;
+    font-size: 30px;
     width: 50%;
   }
   .portfolio-section .project-container {
     max-width: 1200px;
     margin-top: 100px;
+  }
+
+  footer {
+    margin-top: 80px;
+  }
+  footer img {
+    margin-top: 5%;
+    width: 10%;
+  }
+  footer h3 {
+    margin-top: 5%;
+    font-size: 30px;
+    width: 50%;
+  }
+  footer .container-link-contact {
+    margin-top: 8%;
+    margin-bottom: 5%;
+  }
+  footer .container-link-contact .contact-link {
+    font-size: 40px;
+    display: inline-flex;
+  }
+  footer .container-link-contact .contact-link .fa-forward {
+    color: #FFFFFF;
+    margin-top: 4px;
+    margin-left: 20px;
+    font-size: 0.7em;
+  }
+  footer .container-link-contact .go-on-top {
+    font-size: 50px;
   }
 }
 
