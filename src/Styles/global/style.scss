@@ -172,13 +172,12 @@ main{
             width: auto;
             h1{
                 font-size: $h1Size;
-                
-                &:nth-child(1){
-                    margin-bottom: -4px;
-                    .hello{
+                .hello{
                         color: $blue;
-                        font-size: 1.6em;
+                        font-size: 4em;
                     }
+                .virgola{
+                    margin-bottom:-4px;
                 }
                 &:nth-child(2){
                     margin-bottom: 4px;

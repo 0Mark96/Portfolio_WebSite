@@ -95,7 +95,6 @@ function checkItemOnScroll(){
     })
 
     //---FOOTER---contact-me-link
-    // const triggerBottomForFooter = window.innerHeight
     const contactMeLink = document.getElementById('contactLink')
     const contactMeTop = contactMeLink.getBoundingClientRect().top
 
@@ -105,8 +104,26 @@ function checkItemOnScroll(){
       contactMeLink.classList.remove('contact-link-animation')
       }
 
-
 }
 
+//-----HOME PAGE----animation----
 
+    const hello = document.querySelector('.hello')
+    const homeSentence = document.querySelectorAll('#homeSentence')
+    
+    const helloTop = hello.getBoundingClientRect().top
+    const windowHeigth = window.innerHeight 
+    if(helloTop < windowHeigth){
+        homeSentence.forEach((item)=>{
+            item.style.fontSize='0px'
+        })
+        setTimeout(()=>{
+            hello.style.transition='all 1s ease'
+            hello.style.fontSize='1.6em'
+            homeSentence.forEach((item)=>{
+               item.style.transition='all 0.5s ease'
+               item.style.fontSize=''
+            })
+        },2300)
+    }
 
