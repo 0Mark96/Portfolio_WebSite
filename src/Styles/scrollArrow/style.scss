@@ -26,7 +26,7 @@ $white: #FFFFFF;
       color: $white;
   }
   #scroll-down::before {  
-      animation: elasticus 3.7s cubic-bezier(1, 0, 0, 1) infinite;
+      animation: elasticus 3.7 cubic-bezier(1, 0, 0, 1) infinite;
       position: absolute;
       top: 0px;
       left: 50%;

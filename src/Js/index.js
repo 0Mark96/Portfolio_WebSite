@@ -1,3 +1,34 @@
+
+//LOADERS----
+    function preLoader() {
+        setTimeout(showPage,4000);
+        }
+        
+        function showPage() {
+          document.getElementById("loaderContainer").style.display = "none";
+          document.getElementById("content").style.display = "block";
+       
+          //-----HOME PAGE----animation----
+           const hello = document.querySelector('.hello')
+           const homeSentence = document.querySelectorAll('#homeSentence')
+           const helloTop = hello.getBoundingClientRect().top
+           const windowHeigth = window.innerHeight 
+           if(helloTop < windowHeigth){
+              homeSentence.forEach((item)=>{
+              item.style.fontSize='0px'
+           })
+            setTimeout(()=>{
+              hello.style.transition='all 1s ease'
+              hello.style.fontSize='1.6em'
+              homeSentence.forEach((item)=>{
+                item.style.transition='all 0.5s ease'
+                item.style.fontSize=''
+              })
+            },2500)
+        }
+    }
+
+
 // ----------------------Header effect mobile-------------------------------------
 const navMenu = document.getElementById('navMenu');
 const body = document.querySelector('body');
@@ -106,37 +137,6 @@ function checkItemOnScroll(){
 
 }
 
-//-----HOME PAGE----animation----
-
-    const hello = document.querySelector('.hello')
-    const homeSentence = document.querySelectorAll('#homeSentence')
-    
-    const helloTop = hello.getBoundingClientRect().top
-    const windowHeigth = window.innerHeight 
-    if(helloTop < windowHeigth){
-        homeSentence.forEach((item)=>{
-            item.style.fontSize='0px'
-        })
-        setTimeout(()=>{
-            hello.style.transition='all 1s ease'
-            hello.style.fontSize='1.6em'
-            homeSentence.forEach((item)=>{
-               item.style.transition='all 0.5s ease'
-               item.style.fontSize=''
-            })
-        },5300)
-    }
-
-
-    //LOADERS----
 
 
 
-    function myFunction() {
-      let myVar = setTimeout(showPage,2500);
-    }
-    
-    function showPage() {
-      document.getElementById("loader").style.display = "none";
-      document.getElementById("content").style.display = "block";
-    }
