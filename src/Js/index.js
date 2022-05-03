@@ -124,6 +124,19 @@ function checkItemOnScroll(){
                item.style.transition='all 0.5s ease'
                item.style.fontSize=''
             })
-        },2000)
+        },5300)
     }
 
+
+    //LOADERS----
+
+
+
+    function myFunction() {
+      let myVar = setTimeout(showPage,2500);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("content").style.display = "block";
+    }
