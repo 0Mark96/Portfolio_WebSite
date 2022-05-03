@@ -124,6 +124,6 @@ function checkItemOnScroll(){
                item.style.transition='all 0.5s ease'
                item.style.fontSize=''
             })
-        },2300)
+        },2000)
     }
 
