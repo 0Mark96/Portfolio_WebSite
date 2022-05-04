@@ -375,7 +375,7 @@ main img {
   width: 100%;
   position: relative;
 }
-.portfolio-section .project-container .project .cont-over-img {
+.portfolio-section .project-container .project .cont-over-img, .portfolio-section .project-container .project .cont-over-img-no {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -385,12 +385,22 @@ main img {
   left: 0px;
   width: 100%;
   height: 100%;
-  background: rgba(15, 15, 15, 0.925);
-  backdrop-filter: blur(1px);
+  background: rgba(0, 0, 0, 0.596);
+  backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(1px);
 }
-.portfolio-section .project-container .project .cont-over-img h3 {
-  color: #38B6FF;
+.portfolio-section .project-container .project .cont-over-img div, .portfolio-section .project-container .project .cont-over-img-no div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  width: 60%;
+  border-bottom: 2px solid #38B6FF;
+  background: transparent;
+}
+.portfolio-section .project-container .project .cont-over-img div h3, .portfolio-section .project-container .project .cont-over-img-no div h3 {
+  color: #FFFFFF;
 }
 .portfolio-section .project-container .show-project {
   transform: rotate(0) rotateY(0);
@@ -402,7 +412,10 @@ main img {
   -webkit-backdrop-filter: blur(0px) !important;
   transition: all 2s linear;
 }
-.remove-transp-background h3 {
+.remove-transp-background div {
+  display: none !important;
+}
+.remove-transp-background div h3 {
   display: none;
 }
 

@@ -417,7 +417,7 @@ main{
             width: 100%;
             position: relative;
             }  
-            .cont-over-img{
+            .cont-over-img,.cont-over-img-no{
             position:absolute;
             display: flex;
             justify-content: center;
@@ -428,12 +428,22 @@ main{
             width:100%;
             height: 100%;
             
-            background:rgba(15, 15, 15, 0.925);
-            backdrop-filter: blur(1px);
+            background:rgba(0, 0, 0, 0.596);
+            backdrop-filter: blur(7px);
             -webkit-backdrop-filter: blur(1px);
-            h3{
-                color:$blue;
-            }
+              div{
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height:20%;
+                width: 60%;
+                border-bottom: 2px solid $blue;
+                background:transparent;
+                 h3{
+                color:$white;
+                }
+              }
             }
         } 
         .show-project{
@@ -447,10 +457,14 @@ main{
             backdrop-filter: blur(0px) !important;
             -webkit-backdrop-filter: blur(0px) !important;
             transition: all 2s linear;
-            h3{
+            div{
+                display:none !important;
+                h3{
                 display: none;
-            }
+                }
+            } 
 }
+           
 
 
 //---------FOOTER--------------
