@@ -85,7 +85,7 @@ ContOverImg.forEach((item)=>{
       item.classList.add('remove-transp-background')
       setTimeout(()=>{
         item.classList.remove('remove-transp-background')
-      },5000)     
+      },4000)     
   })
 })
 const Img1 = document.getElementById('img1')
