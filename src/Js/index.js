@@ -1,7 +1,7 @@
 
 //LOADERS----
     function preLoader() {
-        setTimeout(showPage,4000);
+        setTimeout(showPage,3800);
         }
         
         function showPage() {
@@ -24,7 +24,7 @@
                 item.style.transition='all 0.5s ease'
                 item.style.fontSize=''
               })
-            },2500)
+            },2200)
         }
     }
 
@@ -82,14 +82,37 @@ const ContOverImg = document.querySelectorAll('.cont-over-img')
 
 ContOverImg.forEach((item)=>{
   item.addEventListener('click',()=>{
-      item.classList.add('transp-background')
-      setTimeout(()=>{
-         location.href='../index.html#skill' 
-      },1000)
+      item.classList.add('remove-transp-background')
+      // setTimeout(()=>{
+      //    location.href='../index.html#skill' 
+      // },1000)
       
   })
 })
-
+const Img1 = document.getElementById('img1')
+Img1.addEventListener('click',()=>{
+  setTimeout(()=>{
+    location.href='https://github.com/0Mark96/Progetto-Javascript-Advanced'
+  },1000)
+})
+const Img2 = document.getElementById('img2')
+Img2.addEventListener('click',()=>{
+  setTimeout(()=>{
+    location.href='https://github.com/0Mark96/Progetto-Javascript-Advanced'
+  },1000)
+})
+const img3 = document.getElementById('img3')
+img3.addEventListener('click',()=>{
+  setTimeout(()=>{
+    location.href='https://github.com/0Mark96/Progetto-Javascript-Advanced'
+  },1000)
+})
+const img4 = document.getElementById('img4')
+img4.addEventListener('click',()=>{
+  setTimeout(()=>{
+    location.href='https://github.com/0Mark96/Progetto-Javascript-Advanced'
+  },1000)
+})
 
 
 // --------ANIMATION ON SCROLL EVENT-------------------------------

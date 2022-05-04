@@ -140,7 +140,7 @@ main .home .title h1 {
 }
 main .home .title h1 .hello {
   color: #38B6FF;
-  font-size: 4em;
+  font-size: 3em;
 }
 main .home .title h1 .virgola {
   margin-bottom: -4px;
@@ -357,38 +357,50 @@ main img {
   text-align: center;
 }
 .portfolio-section .project-container {
-  padding: 40px;
+  padding: 30px;
   width: 100vw;
   max-width: 100vw;
   margin: 0 auto;
   margin-top: 40px;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 10px;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 .portfolio-section .project-container .project {
-  position: relative;
   transform: rotate(90deg) rotateY(90deg);
   transition: transform 1s ease;
 }
 .portfolio-section .project-container .project img {
+  display: block;
   width: 100%;
+  position: relative;
 }
 .portfolio-section .project-container .project .cont-over-img {
   position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 0;
-  height: 100%;
+  bottom: 0;
+  left: 0px;
   width: 100%;
-  transition: all 1s linear;
+  height: 100%;
+  background: rgba(15, 15, 15, 0.925);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px);
 }
 .portfolio-section .project-container .show-project {
   transform: rotate(0) rotateY(0);
 }
 
-.transp-background {
-  background: rgba(15, 15, 15, 0.692);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
+.remove-transp-background {
+  background: rgba(15, 15, 15, 0.342) !important;
+  backdrop-filter: blur(0px) !important;
+  -webkit-backdrop-filter: blur(0px) !important;
+  transition: all 2s linear;
+}
+.remove-transp-background h3 {
+  display: none;
 }
 
 footer {
