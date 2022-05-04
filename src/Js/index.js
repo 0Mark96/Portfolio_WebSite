@@ -83,10 +83,9 @@ const ContOverImg = document.querySelectorAll('.cont-over-img')
 ContOverImg.forEach((item)=>{
   item.addEventListener('click',()=>{
       item.classList.add('remove-transp-background')
-      // setTimeout(()=>{
-      //    location.href='../index.html#skill' 
-      // },1000)
-      
+      setTimeout(()=>{
+        item.classList.remove('remove-transp-background')
+      },5000)     
   })
 })
 const Img1 = document.getElementById('img1')
