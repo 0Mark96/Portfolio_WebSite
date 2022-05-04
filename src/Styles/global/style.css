@@ -389,6 +389,9 @@ main img {
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(1px);
 }
+.portfolio-section .project-container .project .cont-over-img h3 {
+  color: #38B6FF;
+}
 .portfolio-section .project-container .show-project {
   transform: rotate(0) rotateY(0);
 }
