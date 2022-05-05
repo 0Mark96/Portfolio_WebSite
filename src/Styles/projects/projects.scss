@@ -1,0 +1,48 @@
+$black: #010101;
+$white: #FFFFFF;
+$grey: #3E3E3E;
+$blue:#38B6FF;
+
+//------------------------------^
+
+// FONT SIZE
+$h1Size:9vw;
+$h3Size:5vw;
+$h4Size:4vw;
+//tablet
+$h1Tsize:8vw;
+$h3Tsize:4vw;
+$h4Tsize:3vw;
+//------------------------------^
+
+// FONT
+@font-face {
+    font-family: 'Font';
+    src: url('../../assets/font/Gayathri-Thin.ttf');
+
+}
+@font-face {
+    font-family: 'FontBold';
+    src: url('../../assets/font/Gayathri-Regular.ttf');
+
+}
+//------------------------------^
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+html body{
+    background-color: $black;
+    color:$white;
+    max-width: 100vw;
+    font-family: 'Font';
+    overflow-x: hidden;
+}
