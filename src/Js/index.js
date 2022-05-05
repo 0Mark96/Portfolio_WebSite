@@ -91,25 +91,25 @@ ContOverImg.forEach((item)=>{
 const Img1 = document.getElementById('img1')
 Img1.addEventListener('click',()=>{
   setTimeout(()=>{
-    location.href='https://github.com/0Mark96/Progetto-Javascript-Advanced'
+    location.href='./page/counter_project.html'
   },1000)
 })
 const Img2 = document.getElementById('img2')
 Img2.addEventListener('click',()=>{
   setTimeout(()=>{
-    location.href='https://github.com/0Mark96/Progetto-Javascript-Advanced'
+    location.href='page/book_project.html'
   },1000)
 })
 const img3 = document.getElementById('img3')
 img3.addEventListener('click',()=>{
   setTimeout(()=>{
-    location.href='https://github.com/0Mark96/Progetto-Javascript-Advanced'
+    location.href='page/portfolio_project.html'
   },1000)
 })
 const img4 = document.getElementById('img4')
 img4.addEventListener('click',()=>{
   setTimeout(()=>{
-    location.href='https://github.com/0Mark96/Progetto-Javascript-Advanced'
+    location.href='page/oldportfolio_project.html'
   },1000)
 })
 
