@@ -1,10 +1,11 @@
 
 // -----HOME PAGE----animation----
-           const hello = document.querySelector('.hello')
-           const homeSentence = document.querySelectorAll('#homeSentence')
-           const helloTop = hello.getBoundingClientRect().top
-           const windowHeigth = window.innerHeight 
-           if(helloTop < windowHeigth){
+const hello = document.querySelector('.hello')
+const homeSentence = document.querySelectorAll('#homeSentence')
+const helloTop = hello.getBoundingClientRect().top
+const windowHeigth = window.innerHeight 
+if(location.hash === ''){ //
+          if(helloTop < windowHeigth){
               homeSentence.forEach((item)=>{
               item.style.fontSize='0px'
            })
@@ -17,8 +18,10 @@
               })
             },2200)
         }
-
-//LOADERS----and say hello
+      }else{
+        hello.style.fontSize='1.6em'
+      }
+// // LOADERS----and say hello
 
 // const loaderContainer = document.getElementById("loaderContainer")
 // const content = document.getElementById("content")
@@ -29,15 +32,15 @@
 
 
 // function preLoader() {
-//   if(location.hash === ''){ //  load just once
+//   // if(location.hash === ''){ //  load just once
 //     setTimeout(showPage,3800);
-//     }
-//     else{ // if there is a hash DO NOT load and DO NOT say hello 'AGAIN'
-//       loaderContainer.style.display = "none";
-//       content.style.display = "block";
-//       content.style.transition='all .1s ease'
-//       hello.style.fontSize='1.6em'
-//     }
+//     // }
+//     // else{ // if there is a hash DO NOT load and DO NOT say hello 'AGAIN'
+//     //   loaderContainer.style.display = "none";
+//     //   content.style.display = "block";
+//     //   content.style.transition='all .1s ease'
+//     //   hello.style.fontSize='1.6em'
+//     // // }
 //   }    
      
     
