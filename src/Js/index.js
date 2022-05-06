@@ -35,6 +35,7 @@ function preLoader() {
     else{ // if there is a hash DO NOT load and DO NOT say hello 'AGAIN'
       loaderContainer.style.display = "none";
       content.style.display = "block";
+      content.style.transition='all .1s ease'
       hello.style.fontSize='1.6em'
     }
   }    
