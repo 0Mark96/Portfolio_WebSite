@@ -1,51 +1,9 @@
 
-// // -----HOME PAGE----animation----
-//            const hello = document.querySelector('.hello')
-//            const homeSentence = document.querySelectorAll('#homeSentence')
-//            const helloTop = hello.getBoundingClientRect().top
-//            const windowHeigth = window.innerHeight 
-//            if(helloTop < windowHeigth){
-//               homeSentence.forEach((item)=>{
-//               item.style.fontSize='0px'
-//            })
-//             setTimeout(()=>{
-//               hello.style.transition='all 1s ease'
-//               hello.style.fontSize='1.6em'
-//               homeSentence.forEach((item)=>{
-//                 item.style.transition='all 0.5s ease'
-//                 item.style.fontSize=''
-//               })
-//             },2200)
-//         }
-
-//LOADERS----and say hello
-
-const loaderContainer = document.getElementById("loaderContainer")
-const content = document.getElementById("content")
-const hello = document.querySelector('.hello')
-const homeSentence = document.querySelectorAll('#homeSentence')
-const helloTop = hello.getBoundingClientRect().top
-const windowHeigth = window.innerHeight 
-
-
-function preLoader() {
-  if(location.hash === ''){ //  load just once
-    setTimeout(showPage,3800);
-    }
-    else{ // if there is a hash DO NOT load and DO NOT say hello 'AGAIN'
-      loaderContainer.style.display = "none";
-      content.style.display = "block";
-      content.style.transition='all .1s ease'
-      hello.style.fontSize='1.6em'
-    }
-  }    
-     
-    
-
-    function showPage() {
-       loaderContainer.style.display = "none";
-        content.style.display = "block";
-          //-----HOME PAGE----animation----
+// -----HOME PAGE----animation----
+           const hello = document.querySelector('.hello')
+           const homeSentence = document.querySelectorAll('#homeSentence')
+           const helloTop = hello.getBoundingClientRect().top
+           const windowHeigth = window.innerHeight 
            if(helloTop < windowHeigth){
               homeSentence.forEach((item)=>{
               item.style.fontSize='0px'
@@ -59,7 +17,49 @@ function preLoader() {
               })
             },2200)
         }
-    }
+
+//LOADERS----and say hello
+
+// const loaderContainer = document.getElementById("loaderContainer")
+// const content = document.getElementById("content")
+// const hello = document.querySelector('.hello')
+// const homeSentence = document.querySelectorAll('#homeSentence')
+// const helloTop = hello.getBoundingClientRect().top
+// const windowHeigth = window.innerHeight 
+
+
+// function preLoader() {
+//   if(location.hash === ''){ //  load just once
+//     setTimeout(showPage,3800);
+//     }
+//     else{ // if there is a hash DO NOT load and DO NOT say hello 'AGAIN'
+//       loaderContainer.style.display = "none";
+//       content.style.display = "block";
+//       content.style.transition='all .1s ease'
+//       hello.style.fontSize='1.6em'
+//     }
+//   }    
+     
+    
+
+//     function showPage() {
+//        loaderContainer.style.display = "none";
+//         content.style.display = "block";
+//           //-----HOME PAGE----animation----
+//            if(helloTop < windowHeigth){
+//               homeSentence.forEach((item)=>{
+//               item.style.fontSize='0px'
+//            })
+//             setTimeout(()=>{
+//               hello.style.transition='all 1s ease'
+//               hello.style.fontSize='1.6em'
+//               homeSentence.forEach((item)=>{
+//                 item.style.transition='all 0.5s ease'
+//                 item.style.fontSize=''
+//               })
+//             },2200)
+//         }
+//     }
 
 
 // ----------------------Header effect mobile-------------------------------------
