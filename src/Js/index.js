@@ -37,6 +37,7 @@ function preLoader() {
       content.style.display = "block";
       content.style.transition='all .1s ease'
       hello.style.fontSize='1.6em'
+      location.href=location.hash
     }
   }    
      
