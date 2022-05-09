@@ -64,8 +64,8 @@ main {
   outline: none;
 }
 .content .form-container label input:-webkit-autofill, .content .form-container label input:-webkit-autofill:hover, .content .form-container label input:-webkit-autofill:focus, .content .form-container label input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0 30px #38B6FF inset !important;
-  box-shadow: 0 0 0 30px #010101 inset !important;
+  -webkit-box-shadow: 0 0 0 30px #FFFFFF inset !important;
+  box-shadow: 0 0 0 30px #FFFFFF inset !important;
   -webkit-color: #FFFFFF;
   color: #FFFFFF;
 }
