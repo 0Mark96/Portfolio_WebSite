@@ -85,8 +85,9 @@ main{
            &:-webkit-autofill:hover, 
            &:-webkit-autofill:focus, 
            &:-webkit-autofill:active{
-          -webkit-box-shadow: 0 0 0 30px $black inset !important;
+          -webkit-box-shadow: 0 0 0 30px $blue inset !important;
           box-shadow: 0 0 0 30px $black inset !important;
+          color: $white;
            }
        }
      }
