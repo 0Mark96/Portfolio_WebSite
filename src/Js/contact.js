@@ -42,3 +42,18 @@ navLink.forEach (element => {
     body.style.overflow = body.style.overflow === 'hidden' ? '' : 'hidden';
 })
 })
+
+
+// animation
+
+const h1getInTouch = document.getElementById('h1getInTouch') 
+const formContainer = document.querySelector('.form-container')
+const h1Top = h1getInTouch.getBoundingClientRect().top
+const windowHeigth = window.innerHeight
+
+if(h1Top < windowHeigth){
+    h1getInTouch.style.transform='translatex(0px)'
+    setTimeout(()=>{
+        formContainer.style.transform='rotateX(0deg)'
+    },1000) 
+}
