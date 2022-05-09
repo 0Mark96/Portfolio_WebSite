@@ -87,6 +87,7 @@ main{
            &:-webkit-autofill:active{
           -webkit-box-shadow: 0 0 0 30px $blue inset !important;
           box-shadow: 0 0 0 30px $black inset !important;
+          -webkit-color: $white;
           color: $white;
            }
        }
