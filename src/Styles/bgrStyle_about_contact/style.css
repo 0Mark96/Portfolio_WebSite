@@ -1,0 +1,41 @@
+/* screen XS___________________________________________________________________________________*/
+.background-xs-screen1 {
+  border: 0.6px solid #38b6ff4b;
+}
+.background-xs-screen1 .background-xs-screen2 {
+  border: 0.3px solid #38b6ff4b;
+}
+
+/*Sreen S___________________________________________________________________________________*/
+.background-s-screen1 {
+  border: 0.8px solid #38b6ff4b;
+}
+.background-s-screen1 .background-s-screen2 {
+  border: 0.5px solid #38b6ff4b;
+}
+
+/*Sreen M___________________________________________________________________________________*/
+.background-m-screen1 {
+  border: 1.5px solid #38b6ff4b;
+}
+.background-m-screen1 .background-m-screen2 {
+  border: 0.8px solid #38b6ff4b;
+}
+
+/*Sreen L___________________________________________________________________________________*/
+.background-l-screen1 {
+  border: 1.8px solid #38b6ff4b;
+}
+.background-l-screen1 .background-l-screen2 {
+  border: 1px solid #38b6ff4b;
+}
+
+/*Sreen XL___________________________________________________________________________________*/
+.background-xl-screen1 {
+  border: 1.8px solid #38b6ff4b;
+}
+.background-xl-screen1 .background-xl-screen2 {
+  border: 1px solid #38b6ff4b;
+}
+
+/*# sourceMappingURL=style.css.map */

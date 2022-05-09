@@ -1,0 +1,210 @@
+$black: #010101;
+$white: #FFFFFF;
+$grey: #3E3E3E;
+$blue:#38B6FF;
+
+//------------------------------^
+
+// FONT SIZE
+$h1Size:9vw;
+$h2Size:6vw;
+$h3Size:5vw;
+$h4Size:4vw;
+//tablet
+$h1Tsize:8vw;
+$h2Tsize:5vw;
+$h3Tsize:4vw;
+$h4Tsize:3vw;
+//------------------------------^
+// FONT
+@font-face {
+    font-family: 'Font';
+    src: url('../../assets/font/Gayathri-Thin.ttf');
+
+}
+@font-face {
+    font-family: 'FontBold';
+    src: url('../../assets/font/Gayathri-Regular.ttf');
+
+}
+//------------------------------^
+main{
+    height: 100vh !important;
+}
+.home{
+    background:none !important;
+    backdrop-filter:none !important;
+    -webkit-backdrop-filter:none !important;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 18%;
+    color: $white;
+    height: 100%;
+    h1{
+     font-size: $h1Size;
+    }
+   .form-container{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: flex-start;
+     margin: 2em;
+     width: 90vw;
+    //  height: 60vh;
+     padding:20px;
+
+     background:rgba(15, 15, 15, 0.1);
+     backdrop-filter: blur(5px);
+     -webkit-backdrop-filter: blur(5px);
+     border-top:2px solid $white;
+     border-bottom: 2px solid $white;
+     label{
+       display: flex;
+       flex-direction: column;
+       width: 100%;
+       margin:1em;
+       margin-left: 0px;
+       p{
+           font-size: 4vw;
+           color:#919191;
+       }
+       input{
+           width:100%;
+           background-color: transparent;
+           border: none;
+           border-bottom: 1px solid $white;
+           color:$white;
+           &:focus{
+              outline: none;
+           }
+       }
+     }
+     button{
+       align-self: center;
+       border: none;
+       background-color: transparent;
+       color: $blue;
+       margin:1em;
+        h2{
+            font-size: $h2Size;
+        }
+        .fa-forward{
+            color: $white;
+            margin-top:3px;
+            margin-left: 11px;
+            font-size: 0.8em;
+          }
+     }
+   }
+   .social-link{
+       width: 80%;
+       display: flex;
+       justify-content: space-around;
+       font-size: $h1Size;
+       margin-bottom: 5px;
+       a{
+           text-decoration: none;
+           color: $white;
+           -webkit-tap-highlight-color: rgba(0,0,0,0);
+       }
+   }
+}
+@media screen and (max-height: 428px){
+    .content{
+        margin-top: 8%;
+     }
+    .form-container{
+        height: auto !important;
+     label,button{
+         margin: 1em;
+     }
+    }
+}
+@media screen and (min-width: 500px){
+    .content{
+        margin-top: 12%;
+        h1{
+         font-size: $h1Tsize;
+        }
+       .form-container{
+         width: 85vw;
+         label{
+             margin:2em;
+           p{
+               font-size: 3vw;
+           }
+         }
+         button{
+             margin:2em;
+            h2{
+                font-size: $h2Tsize;
+            }
+         }
+        }
+        .social-link{
+            font-size: 6.5vw;
+            margin:0.7em;
+        }
+    }
+}
+
+@media  screen and (min-width: 1025px){
+    .home{
+        background:rgba(15, 15, 15, 0.1) !important;
+        backdrop-filter: blur(5px) !important;
+        -webkit-backdrop-filter: blur(5px) !important;
+    }
+    .content{
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 0%;
+        color: $white;
+        height: 97%;
+        width: 103%;
+        h1{
+         font-size: 100px;
+         align-self: flex-start;
+         width: 30%;
+         margin-left: 7%;
+        }
+       .form-container{
+         position: absolute;
+         right: 0px;
+         bottom: 0px;
+         margin:0em;
+         width: 60%;
+         height: 70vh;
+
+         background:$black;
+         backdrop-filter: blur(0px);
+         -webkit-backdrop-filter: blur(0px);
+         border:1px solid $white;
+         label{
+             margin: 0em;
+           p{
+               font-size: 20px;
+           }
+           input{
+               font-size:25px;
+           }
+         }
+         button{
+            h2{
+                font-size: 30px;
+            }
+         }
+       }
+       .social-link{
+           width: 30%;
+           align-self: flex-start;
+           font-size: 40px;
+           margin-bottom: 5%;
+           margin-left: 3%;
+       }
+    }
+}

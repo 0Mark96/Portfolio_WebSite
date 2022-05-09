@@ -1,0 +1,54 @@
+// COLOR
+
+$black: #010101;
+$white: #FFFFFF;
+$grey: #3E3E3E;
+$blue:#38b6ff4b;
+
+//------------------------------^
+
+
+/* screen XS___________________________________________________________________________________*/
+.background-xs-screen1{
+    border: 0.6px solid $blue;
+    .background-xs-screen2{
+      border: 0.3px solid $blue;
+    }
+}
+
+/*Sreen S___________________________________________________________________________________*/
+    
+.background-s-screen1{
+    border: 0.8px solid $blue;
+    .background-s-screen2{
+        border: 0.5px solid $blue;
+    }
+        
+}
+    
+/*Sreen M___________________________________________________________________________________*/
+    
+.background-m-screen1{
+    border: 1.5px solid $blue;
+    .background-m-screen2{
+        border: 0.8px solid $blue;
+    }     
+}
+    
+/*Sreen L___________________________________________________________________________________*/
+    
+.background-l-screen1{
+    border: 1.8px solid $blue;
+    .background-l-screen2{
+        border: 1px solid $blue;
+    } 
+}
+
+/*Sreen XL___________________________________________________________________________________*/
+    
+.background-xl-screen1{
+    border: 1.8px solid $blue;
+    .background-xl-screen2{
+        border: 1px solid $blue;
+    }
+}
