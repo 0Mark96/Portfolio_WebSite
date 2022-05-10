@@ -57,3 +57,61 @@ if(h1Top < windowHeigth){
         formContainer.style.transform='rotateX(0deg)'
     },1000) 
 }
+
+
+//Send Form
+
+(function() {
+    // https://dashboard.emailjs.com/admin/account
+    emailjs.init('hNzYRHHyITIU20oc_');
+})();
+
+window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        // generate a five digit number for the contact_number variable
+        this.contact_number.value = Math.random() * 100000 | 0;
+        // these IDs from the previous steps
+        emailjs.sendForm('contact_service', 'contact_form', this)
+                .then(function() {  
+                // div for say thanks
+                const thanksUser = document.querySelector('.thanks-user')
+                console.log(thanksUser)
+                thanksUser.style.display='flex'
+                setTimeout(()=>{
+                    thanksUser.style.display='none'
+                },1500) 
+
+            }, function(error) {
+                console.log('FAILED...', error);
+            });
+    });
+}
+        
+// on click btn
+const btnForm = document.getElementById('btnForm')
+const arrowBtn = document.getElementById('arrowBtn')
+btnForm.addEventListener('click',()=>{
+arrowBtn.style.transform='translateX(30px)'
+arrowBtn.style.transition='all .7s ease'
+setTimeout(()=>{
+    arrowBtn.style.transform='translateX(0px)'
+},300)
+
+
+})
+
+// onFocus
+
+const formInp = document.querySelectorAll('#formInp')
+const formLabel = document.querySelectorAll('#formLabel')
+
+
+formInp.forEach((item)=>{
+item.addEventListener('focus',()=>{
+    // formLabel.style.color='#FFFFFF'
+    item.style.borderBottom = '1px solid #FFFFFF';
+})
+})
+
+

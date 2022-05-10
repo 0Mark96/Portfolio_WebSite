@@ -137,7 +137,7 @@ header{
                 // font-size: 30px;
                 -webkit-tap-highlight-color: rgba(0,0,0,0);
                 &:hover{
-                    transition: all .8s linear;
+                    transition: all .6s linear;
                     color:$blue;
                 }
             }           
@@ -671,7 +671,7 @@ footer{
                             font-size: 30px;
                             -webkit-tap-highlight-color: rgba(0,0,0,0);
                             &:hover{
-                                transition: all .8s linear;
+                                transition: all .3s linear;
                                 color:$blue;
                             }
                         }

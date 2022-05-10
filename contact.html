@@ -9,7 +9,7 @@
     <link href="./src/Styles/BackgroundStyle/style.css" rel="stylesheet">
     <link href="./src/Styles/bgrStyle_about_contact/style.css" rel="stylesheet">
     <link href="./src/Styles/global/style.css" rel="stylesheet">
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="https://kit.fontawesome.com/3fd9eacb2c.js" crossorigin="anonymous"></script>
 </head>
 <body  class=".body .body-overflow">
@@ -91,26 +91,28 @@
          
           <h1 id="h1getInTouch">Let's get in touch</h1>
          
-          <Form class="form-container">
-            <label><p>Full Name</p>
-            <input type="text" name="fullName" />
+          <Form class="form-container" id="contact-form">
+            <input type="hidden" name="contact_number">
+            
+            <label><p id="formLabel">Full Name</p>
+            <input id='formInp' type="text" name="user_name" required/>
             </label>
             
-            <label><p>Email</p>
-            <input type="email" name="email" />
+            <label><p id="formLabel">Email</p>
+            <input id='formInp' type="email" name="user_email" required/>
             </label>
             
-            <label><p>Email Subject</p>
-            <input type="text" name="subject" />
+            <label><p id="formLabel">Email Subject</p>
+            <input id='formInp' type="text" name="email_subject" />
             </label>
            
-            <label><p>Message</p>
-            <input type="text" name="message"/>
+            <label><p id="formLabel">Message</p>
+            <input id='formInp' type="text" name="message" required/>
             </label>
             
-            <button><h2>Send Email<i class="fa-solid fa-forward"></i></h2></button>
+            <button value="Send" id="btnForm"><h2>Send Email<i class="fa-solid fa-forward" id="arrowBtn"></i></h2></button>
           </Form>
-         
+           
           <div class="social-link">
             <a href="https://www.linkedin.com/in/marco-verardi-664555150/"><i class="fa-brands fa-linkedin-in"></i></a>
             <a href="https://it-it.facebook.com/marco.verardi.7"><i class="fa-brands fa-facebook-f"></i></a>
@@ -119,6 +121,9 @@
           </div>
       
        </div>
+    </div>
+    <div class="thanks-user">
+      <h1>Thanks for contacting me !</h1>
     </div>
    </main>
    <script src="./src/Js/contact.js"></script>

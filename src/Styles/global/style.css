@@ -104,7 +104,7 @@ header .nav-link-container li a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 header .nav-link-container li a:hover {
-  transition: all 0.8s linear;
+  transition: all 0.6s linear;
   color: #38B6FF;
 }
 
@@ -603,7 +603,7 @@ footer .container-link-contact .go-on-top .fa-forward {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   }
   main .home .laptopHeader ul li a:hover {
-    transition: all 0.8s linear;
+    transition: all 0.3s linear;
     color: #38B6FF;
   }
   main .home .laptopHeader img {
