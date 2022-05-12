@@ -1,10 +1,10 @@
 @font-face {
   font-family: "Font";
-  src: url("../../assets/font/Gayathri-Thin.ttf");
+  src: url("../../assets/font/Gayathri-Thin.woff2");
 }
 @font-face {
   font-family: "FontBold";
-  src: url("../../assets/font/Gayathri-Regular.ttf");
+  src: url("../../assets/font/Gayathri-Regular.woff2");
 }
 ::-webkit-scrollbar {
   width: 0px;

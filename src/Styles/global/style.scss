@@ -20,12 +20,12 @@ $h4Tsize:3vw;
 // FONT
 @font-face {
     font-family: 'Font';
-    src: url('../../assets/font/Gayathri-Thin.ttf');
+    src: url('../../assets/font/Gayathri-Thin.woff2');
 
 }
 @font-face {
     font-family: 'FontBold';
-    src: url('../../assets/font/Gayathri-Regular.ttf');
+    src: url('../../assets/font/Gayathri-Regular.woff2');
 
 }
 //------------------------------^
@@ -388,21 +388,21 @@ main{
     }
 }
 
-//----------------PORTFOLIO SECTION--------------
+// //----------------PORTFOLIO SECTION--------------
 
 .portfolio-section{
     @include flexCenter();
-    flex-direction: column;
+            flex-direction: column;
     .title-sentence{
         width: 90%;
         margin-top: 70px;
         display: flex;
-        flex-direction: column;
+                flex-direction: column;
         h1{
             font-size:$h1Size + 2vw;
             font-family: 'FontBold';
             color: $blue;
-            align-self:flex-start;
+                align-self:flex-start;
         }
         h3{
             margin-top:40px;
@@ -412,7 +412,6 @@ main{
     }
 
     .project-container{
-       
        padding:30px;
        width: 100vw;
        max-width: 100vw;
@@ -436,8 +435,8 @@ main{
             .cont-over-img,.cont-over-img-no{
             position:absolute;
             display: flex;
-            justify-content: center;
-            align-items: center;
+                    justify-content: center;
+                    align-items: center;
             top:0;
             bottom:0;
             left:0px;
@@ -450,8 +449,8 @@ main{
               div{
                 position: relative;
                 display: flex;
-                justify-content: center;
-                align-items: center;
+                        justify-content: center;
+                        align-items: center;
                 height:20%;
                 width: 60%;
                 border-bottom: 2px solid $blue;
@@ -483,7 +482,6 @@ main{
                 }
             } 
 }
-           
 
 
 //---------FOOTER--------------
