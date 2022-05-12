@@ -47,6 +47,9 @@ header #navMenu {
   top: 2.5vh;
   right: 15px;
   transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
 }
 header #navMenu .span1,
 header #navMenu .span2,
@@ -76,10 +79,16 @@ header #navMenu.active .span2 {
 }
 header #navMenu.active .span1 {
   transform: translateY(12px) rotate(45deg);
+  -webkit-transform: translateY(12px) rotate(45deg);
+  -ms-transform: translateY(12px) rotate(45deg);
+  -moz-transform: translateY(12px) rotate(45deg);
   width: 42px;
 }
 header #navMenu.active .span3 {
   transform: translateY(-12px) rotate(-45deg);
+  -webkit-transform: translateY(-12px) rotate(-45deg);
+  -ms-transform: translateY(-12px) rotate(-45deg);
+  -moz-transform: translateY(-12px) rotate(-45deg);
   width: 42px;
 }
 header img {
@@ -371,6 +380,9 @@ main img {
 }
 .portfolio-section .project-container .project {
   transform: rotate(90deg) rotateY(90deg);
+  -webkit-transform: rotate(90deg) rotateY(90deg);
+  -ms-transform: rotate(90deg) rotateY(90deg);
+  -moz-transform: rotate(90deg) rotateY(90deg);
   transition: transform 1s ease;
 }
 .portfolio-section .project-container .project img {
@@ -407,6 +419,9 @@ main img {
 }
 .portfolio-section .project-container .show-project {
   transform: rotate(0) rotateY(0);
+  -webkit-transform: rotate(0) rotateY(0);
+  -ms-transform: rotate(0) rotateY(0);
+  -moz-transform: rotate(0) rotateY(0);
 }
 
 .remove-transp-background {
@@ -458,6 +473,9 @@ footer .container-link-contact .contact-link {
   font-size: 5vw;
   display: inline-flex;
   transform: rotate(90deg) rotateY(90deg);
+  -webkit-transform: rotate(90deg) rotateY(90deg);
+  -ms-transform: rotate(90deg) rotateY(90deg);
+  -moz-transform: rotate(90deg) rotateY(90deg);
   transition: transform 1s ease;
   margin-left: 100px;
 }
@@ -469,6 +487,9 @@ footer .container-link-contact .contact-link .fa-forward {
 }
 footer .container-link-contact .contact-link-animation {
   transform: rotate(0) rotateY(0);
+  -webkit-transform: rotate(0) rotateY(0);
+  -ms-transform: rotate(0) rotateY(0);
+  -moz-transform: rotate(0) rotateY(0);
 }
 footer .container-link-contact .go-on-top {
   text-decoration: none;
@@ -479,6 +500,9 @@ footer .container-link-contact .go-on-top {
 footer .container-link-contact .go-on-top .fa-forward {
   color: #FFFFFF;
   transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
 }
 
 @media screen and (max-height: 428px) {

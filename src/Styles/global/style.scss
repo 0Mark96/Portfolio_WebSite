@@ -81,6 +81,9 @@ header{
        top:2.5vh;
        right:15px;
        transform: rotate(180deg);
+       -webkit-transform: rotate(180deg);
+       -ms-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
         .span1,
         .span2,
         .span3 {
@@ -109,10 +112,16 @@ header{
         }
         .span1{
             transform: translateY(12px) rotate(45deg);
+            -webkit-transform: translateY(12px) rotate(45deg);
+            -ms-transform: translateY(12px) rotate(45deg);
+            -moz-transform: translateY(12px) rotate(45deg);
             width: 42px;
         }
         .span3{
             transform: translateY(-12px) rotate(-45deg);
+            -webkit-transform: translateY(-12px) rotate(-45deg);
+            -ms-transform: translateY(-12px) rotate(-45deg);
+            -moz-transform: translateY(-12px) rotate(-45deg);
             width: 42px;
         }
     }
@@ -415,6 +424,9 @@ main{
        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         .project{
             transform: rotate(90deg) rotateY(90deg);
+            -webkit-transform: rotate(90deg) rotateY(90deg);
+            -ms-transform: rotate(90deg) rotateY(90deg);
+            -moz-transform: rotate(90deg) rotateY(90deg);
             transition: transform 1s ease;
             img{
             display:block;
@@ -452,6 +464,9 @@ main{
         } 
         .show-project{
         transform: rotate(0) rotateY(0);
+        -webkit-transform: rotate(0) rotateY(0);
+        -ms-transform: rotate(0) rotateY(0);
+        -moz-transform: rotate(0) rotateY(0);
         }
     }
 }
@@ -508,6 +523,9 @@ footer{
             font-size: $h3Size; 
             display:inline-flex;
             transform: rotate(90deg) rotateY(90deg);
+            -webkit-transform: rotate(90deg) rotateY(90deg);
+            -ms-transform: rotate(90deg) rotateY(90deg);
+            -moz-transform: rotate(90deg) rotateY(90deg);
             transition: transform 1s ease;
             margin-left: 100px;
             .fa-forward{
@@ -519,6 +537,9 @@ footer{
         }
         .contact-link-animation{
             transform: rotate(0) rotateY(0);
+            -webkit-transform: rotate(0) rotateY(0);
+            -ms-transform: rotate(0) rotateY(0);
+            -moz-transform: rotate(0) rotateY(0);
         }
         .go-on-top {
             text-decoration: none;
@@ -527,7 +548,10 @@ footer{
             font-size: $h3Size; 
             .fa-forward{
                color: $white;
-               transform:rotate(-90deg)
+               transform:rotate(-90deg);
+               -webkit-transform: rotate(-90deg);
+               -ms-transform: rotate(-90deg);
+               -moz-transform: rotate(-90deg);
             }
         } 
     }

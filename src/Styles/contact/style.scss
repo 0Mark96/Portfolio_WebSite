@@ -48,6 +48,9 @@ main{
     h1{
      font-size: $h1Size;
      transform: translateX(-120%);
+     -webkit-transform: translateX(-120%);
+     -ms-transform: translateX(-120%);
+     -moz-transform: translateX(-120%);
      transition: all 0.8s ease;
     }
    .form-container{
@@ -66,6 +69,9 @@ main{
      border-bottom: 2px solid $white;
 
      transform:  rotateX(90deg);
+     -webkit-transform: rotateX(90deg);
+     -ms-transform: rotateX(90deg);
+     -moz-transform: rotateX(90deg);
      transition: transform 1s ease;
 
      label{
@@ -135,6 +141,9 @@ main{
            &:hover{
                color: $blue;
                transform: scale(1.2,1.2);
+               -webkit-transform: scale(1.2,1.2);
+               -ms-transform: scale(1.2,1.2);
+               -moz-transform: scale(1.2,1.2);
            }
        }
    }

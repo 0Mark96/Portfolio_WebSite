@@ -23,6 +23,9 @@ height: auto !important;
     // border: 1px solid white;
     margin-top: 30px;
     transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
    .date-and-bio-container2{
         // border: 1px solid yellow;
         width: 85%;
@@ -48,6 +51,9 @@ height: auto !important;
 .go-on-top {
     .fa-forward{
        transform:rotate(-180deg) !important;
+       -webkit-transform:rotate(-180deg) !important;
+       -ms-transform:rotate(-180deg) !important;
+       -moz-transform:rotate(-180deg) !important;
     }
 } 
 
@@ -152,6 +158,9 @@ height: auto !important;
     .go-on-top {
         .fa-forward{
            transform:rotate(-180deg) !important;
+           -webkit-transform:rotate(-180deg) !important;
+           -ms-transform:rotate(-180deg) !important;
+           -moz-transform:rotate(-180deg) !important;
         }
     } 
 }

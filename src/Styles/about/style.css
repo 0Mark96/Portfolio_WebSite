@@ -17,6 +17,9 @@ main {
 .date-and-bio-container1 {
   margin-top: 30px;
   transform: rotateX(90deg);
+  -webkit-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
 }
 .date-and-bio-container1 .date-and-bio-container2 {
   width: 85%;
@@ -38,6 +41,9 @@ main {
 
 .go-on-top .fa-forward {
   transform: rotate(-180deg) !important;
+  -webkit-transform: rotate(-180deg) !important;
+  -ms-transform: rotate(-180deg) !important;
+  -moz-transform: rotate(-180deg) !important;
 }
 
 @media screen and (max-height: 428px) {
@@ -135,6 +141,9 @@ main {
 
   .go-on-top .fa-forward {
     transform: rotate(-180deg) !important;
+    -webkit-transform: rotate(-180deg) !important;
+    -ms-transform: rotate(-180deg) !important;
+    -moz-transform: rotate(-180deg) !important;
   }
 }
 
