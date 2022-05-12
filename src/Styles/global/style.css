@@ -384,6 +384,8 @@ main img {
   -ms-transform: rotate(90deg) rotateY(90deg);
   -moz-transform: rotate(90deg) rotateY(90deg);
   transition: transform 1s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 .portfolio-section .project-container .project img {
   display: block;
@@ -422,6 +424,8 @@ main img {
   -webkit-transform: rotate(0) rotateY(0);
   -ms-transform: rotate(0) rotateY(0);
   -moz-transform: rotate(0) rotateY(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .remove-transp-background {
