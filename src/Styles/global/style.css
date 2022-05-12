@@ -23,9 +23,10 @@ html {
 html body {
   background-color: #010101;
   color: #FFFFFF;
-  max-width: 100vw;
   font-family: "Font";
   overflow-x: hidden;
+  max-width: 2000px;
+  margin: 0 auto;
 }
 
 header {
@@ -173,6 +174,8 @@ main img {
   height: 60vw;
   bottom: 0;
   right: 0;
+  max-width: 1000px;
+  max-height: 1000px;
 }
 
 .hard-skill {
@@ -636,11 +639,11 @@ footer .container-link-contact .go-on-top .fa-forward {
     width: 80%;
   }
   .hard-skill .title-sentence h1 {
-    font-size: 70px;
+    font-size: 60px;
   }
   .hard-skill .title-sentence h3 {
-    font-size: 30px;
-    width: 50%;
+    font-size: 27px;
+    width: 47%;
   }
   .hard-skill .skill-container {
     margin-top: 140px;
@@ -667,13 +670,13 @@ footer .container-link-contact .go-on-top .fa-forward {
     width: 80%;
   }
   .portfolio-section .title-sentence h1 {
-    font-size: 70px;
+    font-size: 60px;
     align-self: flex-end;
   }
   .portfolio-section .title-sentence h3 {
     margin-top: 90px;
-    font-size: 30px;
-    width: 50%;
+    font-size: 27px;
+    width: 47%;
   }
   .portfolio-section .project-container {
     max-width: 1200px;

@@ -55,9 +55,11 @@ html{
 html body{
     background-color: $black;
     color:$white;
-    max-width: 100vw;
+    // max-width: 100vw;
     font-family: 'Font';
     overflow-x: hidden;
+    max-width: 2000px;
+    margin: 0 auto;
 }
 
 // ---------NAVBAR---------------
@@ -211,6 +213,8 @@ main{
         height: 60vw;
         bottom:0;
         right: 0;
+        max-width: 1000px;
+        max-height:1000px;
         }      
 }
 
@@ -636,7 +640,6 @@ footer{
 @media  screen and (min-width: 1025px){
     header{
       display:none;
-
     }
     
     main{
@@ -709,12 +712,12 @@ footer{
             margin-top:100px;
             width: 80%;
             h1{
-            font-size: 70px;
+            font-size: 60px;
             }
         
             h3{
-            font-size: 30px;
-            width: 50%;
+            font-size: 27px;
+            width: 47%;
             }
         }
         .skill-container{
@@ -742,14 +745,14 @@ footer{
             margin-top:0px;
             width: 80%;
             h1{
-            font-size: 70px;
+            font-size: 60px;
             align-self: flex-end;
             }
         
             h3{
             margin-top: 90px;
-            font-size: 30px;
-            width: 50%;
+            font-size: 27px;
+            width: 47%;
             
             }
         }
