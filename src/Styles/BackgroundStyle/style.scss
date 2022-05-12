@@ -47,21 +47,41 @@ $grey: #3E3E3E;
 @keyframes floating-XS{
         0%{
             transform:translate(0%,0%) rotate(0deg);
+            -webkit-transform:translate(0%,0%) rotate(0deg) ;
+            -ms-transform: translate(0%,0%) rotate(0deg);
+            -moz-transform: translate(0%,0%) rotate(0deg);
         }
         20%{
             transform:translate(120px,130px) rotate(72deg);
+            -webkit-transform:translate(120px,130px) rotate(72deg) ;
+            -ms-transform: translate(120px,130px) rotate(72deg);
+            -moz-transform: translate(120px,130px) rotate(72deg);
         }
         40%{
             transform:translate(0px,250px) rotate(144deg);
+            -webkit-transform:translate(0px,250px) rotate(144deg) ;
+            -ms-transform: translate(0px,250px) rotate(144deg);
+            -moz-transform: translate(0px,250px) rotate(144deg);
+
         }
         60%{
              transform:translate(-120px,150px) rotate(216deg);
+             -webkit-transform:translate(-120px,150px) rotate(216deg) ;
+             -ms-transform: translate(-120px,150px) rotate(216deg);
+             -moz-transform: translate(-120px,150px) rotate(216deg);
          }
         80%{
              transform:translate(-40px,-50px) rotate(288deg);
+             -webkit-transform:translate(-40px,-50px) rotate(288deg);
+             -ms-transform: translate(-40px,-50px) rotate(288deg);
+             -moz-transform: translate(-40px,-50px) rotate(288deg);
          }
          100%{
             transform:translate(0px,0px) rotate(360deg);
+            -webkit-transform:translate(0px,0px) rotate(360deg);
+            -ms-transform: translate(0px,0px) rotate(360deg);
+            -moz-transform: translate(0px,0px) rotate(360deg);
+
         }
     }
 
@@ -80,6 +100,9 @@ $grey: #3E3E3E;
     background-color: $black;
     animation: floating-S linear 90s infinite;
     transform:rotate(120deg);
+    -webkit-transform:rotate(120deg);
+    -ms-transform: rotate(120deg);
+    -moz-transform: rotate(120deg);
     .background-s-screen2{
         height: 54px; //90% del primo div
         width:124px; //scalo lo stesso numero dell'altezza
@@ -93,22 +116,42 @@ $grey: #3E3E3E;
 @keyframes floating-S{
     0%{
         transform:translate(0%,0%) rotate(120deg);
+        -webkit-transform:translate(0%,0%) rotate(120deg);
+        -ms-transform: translate(0%,0%) rotate(120deg);
+        -moz-transform: translate(0%,0%) rotate(120deg);
     }
     20%{
         transform:translate(50px,80px) rotate(192deg);
+        -webkit-transform:translate(50px,80px) rotate(192deg);
+        -ms-transform: translate(50px,80px) rotate(192deg);
+        -moz-transform: translate(50px,80px) rotate(192deg);
+
     }
 
     40%{
         transform:translate(0px,290px) rotate(264deg);
+        -webkit-transform:translate(0px,290px) rotate(264deg);
+        -ms-transform: translate(0px,290px) rotate(264deg);
+        -moz-transform: translate(0px,290px) rotate(264deg);
     }
     60%{
          transform:translate(100px,120px) rotate(336deg);
+         -webkit-transform:translate(100px,120px) rotate(336deg);
+         -ms-transform: translate(100px,120px) rotate(336deg);
+         -moz-transform: translate(100px,120px) rotate(336deg);
      }
     80%{
          transform:translate(-40px,0px) rotate(408deg);
+         -webkit-transform:translate(-40px,0px) rotate(408deg);
+         -ms-transform: translate(-40px,0px) rotate(408deg);
+         -moz-transform: translate(-40px,0px) rotate(408deg);
      }
      100%{
         transform:translate(0px,0px) rotate(480deg);
+        -webkit-transform:translate(0px,0px) rotate(480deg);
+        -ms-transform: translate(0px,0px) rotate(480deg);
+        -moz-transform: translate(0px,0px) rotate(480deg);
+
     }         
 }     
 
@@ -127,6 +170,9 @@ $grey: #3E3E3E;
     background-color: $black;
     animation:  floating-M linear 90s infinite;
     transform:rotate(-160deg);
+    -webkit-transform:rotate(-160deg);
+    -ms-transform: rotate(-160deg);
+    -moz-transform: rotate(-160deg);
     .background-m-screen2{
         height: 99px; //90% del primo div
         width:179px; //scalo lo stesso numero dell'altezza
@@ -140,22 +186,43 @@ $grey: #3E3E3E;
 @keyframes floating-M{
     0%{
         transform:translate(0px,0px) rotate(-160deg);
+        -webkit-transform:translate(0px,0px) rotate(-160deg);
+        -ms-transform: translate(0px,0px) rotate(-160deg);
+        -moz-transform: translate(0px,0px) rotate(-160deg);
     }
     20%{
         transform:translate(100px,50px) rotate(-232deg);
+        -webkit-transform:translate(100px,50px) rotate(-232deg);
+        -ms-transform: translate(100px,50px) rotate(-232deg);
+        -moz-transform: translate(100px,50px) rotate(-232deg);
+
     }
     40%{
         transform:translate(100px,-200px) rotate(-304deg);
+        -webkit-transform:translate(100px,-200px) rotate(-304deg);
+        -ms-transform: translate(100px,-200px) rotate(-304deg);
+        -moz-transform: translate(100px,-200px) rotate(-304deg);
+
     }
     60%{
          transform:translate(-80px,-100px) rotate(-376deg);
+         -webkit-transform:translate(-80px,-100px) rotate(-376deg);
+         -ms-transform: translate(-80px,-100px) rotate(-376deg);
+         -moz-transform: translate(-80px,-100px) rotate(-376deg);
+ 
      }
     80%{
          transform:translate(-140px,-30px) rotate(-448deg);
+         -webkit-transform:translate(-140px,-30px) rotate(-448deg);
+         -ms-transform: translate(-140px,-30px) rotate(-448deg);
+         -moz-transform: translate(-140px,-30px) rotate(-448deg);
      }
    
      100%{
         transform:translate(0px,0px) rotate(-520deg);
+        -webkit-transform:translate(0px,0px) rotate(-520deg);
+        -ms-transform: translate(0px,0px) rotate(-520deg);
+        -moz-transform: translate(0px,0px) rotate(-520deg);
     }         
 }     
 
@@ -174,6 +241,9 @@ $grey: #3E3E3E;
     border-radius: 10px;
     animation: floating-L linear 90s infinite;
     transform:rotate(-60deg);
+    -webkit-transform:rotate(-60deg);
+    -ms-transform: rotate(-60deg);
+    -moz-transform: rotate(-60deg);
     .background-l-screen2{
         height: 126px; //90% del primo div
         width:266px; //scalo lo stesso numero dell'altezza
@@ -186,21 +256,39 @@ $grey: #3E3E3E;
 @keyframes floating-L{
     0%{
         transform:translate(0%,0%) rotate(-60deg);
+        -webkit-transform:translate(0%,0%) rotate(-60deg);
+        -ms-transform: translate(0%,0%) rotate(-60deg);
+        -moz-transform: translate(0%,0%) rotate(-60deg);
     }
     20%{
         transform:translate(-150px,-80px) rotate(-100deg);
+        -webkit-transform:translate(-150px,-80px) rotate(-100deg);
+        -ms-transform: translate(-150px,-80px) rotate(-100deg);
+        -moz-transform: translate(-150px,-80px) rotate(-100deg);
     }
     40%{
         transform:translate(-0px,-200px) rotate(-139deg);
+        -webkit-transform:translate(-0px,-200px) rotate(-139deg);
+        -ms-transform: translate(-0px,-200px) rotate(-139deg);
+        -moz-transform: translate(-0px,-200px) rotate(-139deg);
     }
     60%{
          transform:translate(40px,-100px) rotate(-150deg);
+         -webkit-transform:translate(40px,-100px) rotate(-150deg);
+         -ms-transform: translate(40px,-100px) rotate(-150deg);
+         -moz-transform: translate(40px,-100px) rotate(-150deg);
      }
     80%{
          transform:translate(40px,80px) rotate(-108deg);
+         -webkit-transform:translate(40px,80px) rotate(-108deg);
+         -ms-transform: translate(40px,80px) rotate(-108deg);
+         -moz-transform: translate(40px,80px) rotate(-108deg);
      }
      100%{
         transform:translate(0px,0px) rotate(-60deg);
+        -webkit-transform:translate(0px,0px) rotate(-60deg);
+        -ms-transform: translate(0px,0px) rotate(-60deg);
+        -moz-transform: translate(0px,0px) rotate(-60deg);
     }         
 }     
 
@@ -219,6 +307,9 @@ $grey: #3E3E3E;
     border-radius: 15px;
     animation: floating-XL linear 90s infinite;
     transform:rotate(20deg);
+    -webkit-transform:rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
     .background-xl-screen2{
         height: 164px; //90% del primo div
         width:224px; //scalo lo stesso numero dell'altezza
@@ -232,19 +323,34 @@ $grey: #3E3E3E;
 @keyframes floating-XL{
     0%{
         transform:translate(0%,0%) rotate(20deg);
+        -webkit-transform:translate(0%,0%) rotate(20deg);
+        -ms-transform: translate(0%,0%) rotate(20deg);
+        -moz-transform: translate(0%,0%) rotate(20deg);
     }
     20%{
         transform:translate(-160px,10px) rotate(56deg);
+        -webkit-transform:translate(-160px,10px) rotate(56deg);
+        -ms-transform: translate(-160px,10px) rotate(56deg);
+        -moz-transform: translate(-160px,10px) rotate(56deg);
     }
     40%{
         transform:translate(-90px,-230px) rotate(92deg);
+        -webkit-transform:translate(-90px,-230px) rotate(92deg);
+        -ms-transform:translate(-90px,-230px) rotate(92deg);
+        -moz-transform:translate(-90px,-230px) rotate(92deg);
     }
     60%{
          transform:translate(-20px,-190px) rotate(128deg);
+         -webkit-transform:translate(-20px,-190px) rotate(128deg);
+         -ms-transform:translate(-20px,-190px) rotate(128deg);
+         -moz-transform:translate(-20px,-190px) rotate(128deg);
      }
 
      100%{
         transform:translate(0px,0px) rotate(200deg);
+        -webkit-transform:translate(0px,0px) rotate(200deg);
+        -ms-transform:translate(0px,0px) rotate(200deg);
+        -moz-transform:translate(0px,0px) rotate(200deg);
     }         
 }     
 
