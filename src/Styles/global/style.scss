@@ -505,10 +505,11 @@ footer{
             display:inline-flex;
             transform: rotate(90deg) rotateY(90deg);
             transition: transform 1s ease;
+            margin-left: 100px;
             .fa-forward{
               color: $white;
               margin-top:3px;
-              margin-left: 11px;
+              margin-left: 5px;
               font-size: 0.7em;
             }
         }
@@ -597,7 +598,7 @@ footer{
         }
         .project-container{
             margin-top: 80px;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
         }
     }
 
@@ -619,7 +620,7 @@ footer{
               .fa-forward{
                 color: $white;
                 margin-top:4px;
-                margin-left: 20px;
+                margin-left: 10px;
                 font-size: 0.7em;
               }
           }
@@ -778,7 +779,7 @@ footer{
                 .fa-forward{
                   color: $white;
                   margin-top:4px;
-                  margin-left: 20px;
+                  margin-left: 15px;
                   font-size: 0.7em;
                 }
             }

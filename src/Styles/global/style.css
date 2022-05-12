@@ -456,11 +456,12 @@ footer .container-link-contact .contact-link {
   display: inline-flex;
   transform: rotate(90deg) rotateY(90deg);
   transition: transform 1s ease;
+  margin-left: 100px;
 }
 footer .container-link-contact .contact-link .fa-forward {
   color: #FFFFFF;
   margin-top: 3px;
-  margin-left: 11px;
+  margin-left: 5px;
   font-size: 0.7em;
 }
 footer .container-link-contact .contact-link-animation {
@@ -529,7 +530,7 @@ footer .container-link-contact .go-on-top .fa-forward {
   }
   .portfolio-section .project-container {
     margin-top: 80px;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   }
 
   footer {
@@ -553,7 +554,7 @@ footer .container-link-contact .go-on-top .fa-forward {
   footer .container-link-contact .contact-link .fa-forward {
     color: #FFFFFF;
     margin-top: 4px;
-    margin-left: 20px;
+    margin-left: 10px;
     font-size: 0.7em;
   }
   footer .container-link-contact .go-on-top {
@@ -702,7 +703,7 @@ footer .container-link-contact .go-on-top .fa-forward {
   footer .container-link-contact .contact-link .fa-forward {
     color: #FFFFFF;
     margin-top: 4px;
-    margin-left: 20px;
+    margin-left: 15px;
     font-size: 0.7em;
   }
   footer .container-link-contact .go-on-top {
