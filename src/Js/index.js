@@ -16,7 +16,7 @@ if(location.hash === ''){ //
                 item.style.transition='all 0.5s ease'
                 item.style.fontSize=''
               })
-            },2200)
+            },2000)
         }
       }else{
         hello.style.fontSize='1.6em'
