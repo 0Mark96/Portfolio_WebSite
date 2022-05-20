@@ -421,13 +421,17 @@ main{
        grid-gap: 10px;
        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         .project{
-            transform: rotate(90deg) rotateY(90deg);
-            -webkit-transform: rotate(90deg) rotateY(90deg);
-            -ms-transform: rotate(90deg) rotateY(90deg);
-            -moz-transform: rotate(90deg) rotateY(90deg);
+            transform: rotate(90deg);
+            -webkit-transform: rotate(90deg) ;
+            -ms-transform: rotate(90deg) ;
+            -moz-transform: rotate(90deg) ;
             transition: transform 1s ease;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
+            // rotateY(90deg)
+            // rotateY(90deg)
+            // rotateY(90deg)
+            // rotateY(90deg)
             img{
             display:block;
             width: 100%;
@@ -463,12 +467,16 @@ main{
             }
         } 
         .show-project{
-        transform: rotate(0) rotateY(0);
-        -webkit-transform: rotate(0) rotateY(0);
-        -ms-transform: rotate(0) rotateY(0);
-        -moz-transform: rotate(0) rotateY(0);
+        transform: rotate(0) ;
+        -webkit-transform: rotate(0) ;
+        -ms-transform: rotate(0) ;
+        -moz-transform: rotate(0) ;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+        //rotateY(0)
+        // rotateY(0)
+        // rotateY(0)
+        // rotateY(0)
         }
     }
 }

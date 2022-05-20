@@ -1,3 +1,7 @@
+@font-face {
+  font-family: "FontBold";
+  src: url("../../assets/font/Gayathri-Regular.woff2");
+}
 main {
   height: auto !important;
 }
@@ -12,6 +16,7 @@ main {
   text-align: center;
   width: 85%;
   font-size: 20px;
+  font-family: "FontBold";
 }
 
 .date-and-bio-container1 {
@@ -30,7 +35,7 @@ main {
   text-align: end;
 }
 .date-and-bio-container1 .date-and-bio-container2 .bio-container {
-  font-size: 17px;
+  font-size: 19px;
   padding: 20px 0 20px 0;
   text-align: start;
   border-top: 2px solid #FFFFFF;

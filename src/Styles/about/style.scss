@@ -3,6 +3,11 @@ $white: #FFFFFF;
 $grey: #3E3E3E;
 $blue:#38B6FF;
 
+@font-face {
+    font-family: 'FontBold';
+    src: url('../../assets/font/Gayathri-Regular.woff2');
+}
+
 main{
 height: auto !important;
 }
@@ -11,23 +16,21 @@ height: auto !important;
     flex-direction: column;
     align-items: center;
     margin-top: 15vh;
-    // border: 1px solid red;
     .first-sentence{
         text-align: center;
         width: 85%;
         font-size: 20px;
+        font-family: 'FontBold';   
     }
 }
 
 .date-and-bio-container1{
-    // border: 1px solid white;
     margin-top: 30px;
     transform: rotateX(90deg);
     -webkit-transform: rotateX(90deg);
     -ms-transform: rotateX(90deg);
     -moz-transform: rotateX(90deg);
    .date-and-bio-container2{
-        // border: 1px solid yellow;
         width: 85%;
         margin: 0 auto;
         h1{
@@ -35,11 +38,10 @@ height: auto !important;
         text-align: end;
         }
        .bio-container{
-        // border:1px solid purple;
-        font-size: 17px;
+        font-size: 19px;
         padding: 20px 0 20px 0;
         text-align: start;
-        border-top: 2px solid $white;
+        border-top: 2px solid $white; 
         
         background:rgba(15, 15, 15, 0.1);
         backdrop-filter: blur(5px);
