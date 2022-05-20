@@ -20,12 +20,15 @@ $h4Tsize:3vw;
 // FONT
 @font-face {
     font-family: 'Font';
-    src: url('../../assets/font/Gayathri-Thin.woff2');
-
+    src: url('../../assets/font/Gayathri-Thin.woff2') format('woff2'),
+         url('../../assets/font/Gayathri-Thin.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../assets/font/Gayathri-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 @font-face {
     font-family: 'FontBold';
-    src: url('../../assets/font/Gayathri-Regular.woff2');
+    src: url('../../assets/font/Gayathri-Regular.woff2') format('woff2'),
+         url('../../assets/font/Gayathri-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../assets/font/Gayathri-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
 
 }
 //------------------------------^
