@@ -379,10 +379,10 @@ main img {
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 }
 .portfolio-section .project-container .project {
-  transform: rotate(90deg) rotateY(90deg);
-  -webkit-transform: rotate(90deg) rotateY(90deg);
-  -ms-transform: rotate(90deg) rotateY(90deg);
-  -moz-transform: rotate(90deg) rotateY(90deg);
+  transform: scale(0.01, 0.01) rotate(90deg);
+  -webkit-transform: scale(0.01, 0.01) rotate(90deg);
+  -ms-transform: scale(0.01, 0.01) rotate(90deg);
+  -moz-transform: scale(0.01, 0.01) rotate(90deg);
   transition: transform 1s ease;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -391,7 +391,6 @@ main img {
   display: block;
   width: 100%;
   position: relative;
-  transform: translateZ(-1000px);
 }
 .portfolio-section .project-container .project .cont-over-img, .portfolio-section .project-container .project .cont-over-img-no {
   display: block;
@@ -407,7 +406,6 @@ main img {
   background: rgba(0, 0, 0, 0.596);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
-  transform: translateZ(-1000px);
 }
 .portfolio-section .project-container .project .cont-over-img div, .portfolio-section .project-container .project .cont-over-img-no div {
   position: relative;
@@ -423,10 +421,10 @@ main img {
   color: #FFFFFF;
 }
 .portfolio-section .project-container .show-project {
-  transform: rotate(0) rotateY(0);
-  -webkit-transform: rotate(0) rotateY(0);
-  -ms-transform: rotate(0) rotateY(0);
-  -moz-transform: rotate(0) rotateY(0);
+  transform: scale(1, 1) rotate(0deg);
+  -webkit-transform: scale(1, 1) rotate(0deg);
+  -ms-transform: scale(1, 1) rotate(0deg);
+  -moz-transform: scale(1, 1) rotate(0deg);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -479,10 +477,6 @@ footer .container-link-contact .contact-link {
   color: #38B6FF;
   font-size: 5vw;
   display: inline-flex;
-  transform: rotate(90deg) rotateY(90deg);
-  -webkit-transform: rotate(90deg) rotateY(90deg);
-  -ms-transform: rotate(90deg) rotateY(90deg);
-  -moz-transform: rotate(90deg) rotateY(90deg);
   transition: transform 1s ease;
   margin-left: 100px;
 }
@@ -491,12 +485,6 @@ footer .container-link-contact .contact-link .fa-forward {
   margin-top: 3px;
   margin-left: 5px;
   font-size: 0.7em;
-}
-footer .container-link-contact .contact-link-animation {
-  transform: rotate(0) rotateY(0);
-  -webkit-transform: rotate(0) rotateY(0);
-  -ms-transform: rotate(0) rotateY(0);
-  -moz-transform: rotate(0) rotateY(0);
 }
 footer .container-link-contact .go-on-top {
   text-decoration: none;

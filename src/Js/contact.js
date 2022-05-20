@@ -54,7 +54,7 @@ const windowHeigth = window.innerHeight
 if(h1Top < windowHeigth){
     h1getInTouch.style.transform='translatex(0px)'
     setTimeout(()=>{
-        formContainer.style.transform='rotateX(0deg)'
+        formContainer.style.transform='scale(1,1)'
     },1000) 
 }
 

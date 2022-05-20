@@ -68,11 +68,11 @@ main{
      border-top:2px solid $white;
      border-bottom: 2px solid $white;
 
-     transform:  rotateX(90deg);
-     -webkit-transform: rotateX(90deg);
-     -ms-transform: rotateX(90deg);
-     -moz-transform: rotateX(90deg);
-     transition: transform 1s ease;
+     transform:  scale(0.01,0.01);
+     -webkit-transform: scale(0.01,0.01);
+     -ms-transform: scale(0.01,0.01);
+     -moz-transform: scale(0.01,0.01);
+     transition: transform .8s ease;
 
      label{
        display: flex;

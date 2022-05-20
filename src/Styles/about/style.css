@@ -21,10 +21,10 @@ main {
 
 .date-and-bio-container1 {
   margin-top: 30px;
-  transform: rotateX(90deg);
-  -webkit-transform: rotateX(90deg);
-  -ms-transform: rotateX(90deg);
-  -moz-transform: rotateX(90deg);
+  transform: scale(0.01, 0.01);
+  -webkit-transform: scale(0.01, 0.01);
+  -ms-transform: scale(0.01, 0.01);
+  -moz-transform: scale(0.01, 0.01);
 }
 .date-and-bio-container1 .date-and-bio-container2 {
   width: 85%;

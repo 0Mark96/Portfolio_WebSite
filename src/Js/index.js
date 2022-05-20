@@ -172,8 +172,9 @@ function checkItemOnScroll(){
     })
 
     //---PORTFOLIO----move project
-    const projectItem = document.querySelectorAll('.project')
-    projectItem.forEach((item)=>{
+
+       const projectItem = document.querySelectorAll('.project')
+       projectItem.forEach((item)=>{
         const itemTop = item.getBoundingClientRect().top
 
         if(itemTop < triggerBottom){
@@ -182,19 +183,34 @@ function checkItemOnScroll(){
         item.classList.remove('show-project')
         }
     })
-
-    //---FOOTER---contact-me-link
-    const contactMeLink = document.getElementById('contactLink')
-    const contactMeTop = contactMeLink.getBoundingClientRect().top
-
-    if(contactMeTop < triggerBottom){
-        contactMeLink.classList.add('contact-link-animation')
-      }else{
-      contactMeLink.classList.remove('contact-link-animation')
-      }
+    
+   
 
 }
 
+//FOOTER
+// on click btn contact
+const btnContact = document.getElementById('contactLink')
+const arrowBtnContact = document.getElementById('arrowBtnContact')
+btnContact.addEventListener('click',()=>{
+arrowBtnContact.style.transform='translateX(50%)'
+arrowBtnContact.style.transition='all .4s ease'
+setTimeout(()=>{
+    arrowBtnContact.style.transform='translateX(0px)'
+},100)
+})
+
+//home
+// on click btn read about my past
+const btnAbout = document.querySelector('.read-about')
+const arrowBtnAbout = document.getElementById('arrowBtnAbout')
+btnAbout.addEventListener('click',()=>{
+arrowBtnAbout.style.transform='translateX(50%)'
+arrowBtnAbout.style.transition='all .8s ease'
+setTimeout(()=>{
+    arrowBtnAbout.style.transform='translateX(0px)'
+},100)
+})
 
 
 

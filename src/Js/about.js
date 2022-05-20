@@ -67,7 +67,7 @@ function checkItemOnScroll(){
       bioContainer.forEach((item)=>{
       const bioContainerTop= item.getBoundingClientRect().top
       if(bioContainerTop < triggerBottom){
-      item.style.transform='rotateX(0deg)'
+      item.style.transform='scale(1,1)'
       item.style.transition='all 1s ease'
       }
           
