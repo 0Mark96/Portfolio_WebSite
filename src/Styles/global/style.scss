@@ -421,10 +421,10 @@ main{
        grid-gap: 10px;
        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         .project{
-            transform: rotate(90deg);
-            -webkit-transform: rotate(90deg) ;
-            -ms-transform: rotate(90deg) ;
-            -moz-transform: rotate(90deg) ;
+            transform: rotateY(90deg);
+            -webkit-transform: rotateY(90deg) ;
+            -ms-transform: rotateY(90deg) ;
+            -moz-transform: rotateY(90deg) ;
             transition: transform 1s ease;
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
@@ -467,10 +467,10 @@ main{
             }
         } 
         .show-project{
-        transform: rotate(0) ;
-        -webkit-transform: rotate(0) ;
-        -ms-transform: rotate(0) ;
-        -moz-transform: rotate(0) ;
+        transform: rotateY(0) ;
+        -webkit-transform: rotateY(0) ;
+        -ms-transform: rotateY(0) ;
+        -moz-transform: rotateY(0) ;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
         //rotateY(0)
