@@ -433,7 +433,7 @@ main{
             display:block;
             width: 100%;
             position: relative;
-            -webkit-transform:translateZ(-1000px);
+            transform:translateZ(-1000px);
             }  
             .cont-over-img,.cont-over-img-no{
             display:block;
@@ -450,7 +450,7 @@ main{
             background:rgba(0, 0, 0, 0.596);
             backdrop-filter: blur(7px);
             -webkit-backdrop-filter: blur(7px);
-            -webkit-transform:translateZ(-1000px);
+            transform:translateZ(-1000px);
               div{
                 position: relative;
                 display: flex;
