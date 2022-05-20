@@ -175,13 +175,15 @@ main{
         height: 90%;
         width: 95%;
         position:relative;
-        
+        font-family: 'FontBold';
         .title {
             position: relative;
             top:18%;
             width: auto;
+            font-family: 'FontBold';
             h1{
                 font-size: $h1Size;
+                font-family: 'FontBold';
                 .hello{
                         color: $blue;
                         font-size: 3em;

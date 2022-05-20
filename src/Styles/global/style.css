@@ -139,14 +139,17 @@ main .home {
   height: 90%;
   width: 95%;
   position: relative;
+  font-family: "FontBold";
 }
 main .home .title {
   position: relative;
   top: 18%;
   width: auto;
+  font-family: "FontBold";
 }
 main .home .title h1 {
   font-size: 9vw;
+  font-family: "FontBold";
 }
 main .home .title h1 .hello {
   color: #38B6FF;
