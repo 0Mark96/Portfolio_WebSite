@@ -148,7 +148,7 @@ main .home .title {
   font-family: "FontBold";
 }
 main .home .title h1 {
-  font-size: 9vw;
+  font-size: 8vw;
   font-family: "FontBold";
 }
 main .home .title h1 .hello {
@@ -203,7 +203,7 @@ main img {
   flex-direction: column;
 }
 .hard-skill .title-sentence h1 {
-  font-size: 11vw;
+  font-size: 10vw;
   font-family: "FontBold";
   color: #38B6FF;
   align-self: flex-end;
@@ -361,7 +361,7 @@ main img {
   flex-direction: column;
 }
 .portfolio-section .title-sentence h1 {
-  font-size: 11vw;
+  font-size: 10vw;
   font-family: "FontBold";
   color: #38B6FF;
   align-self: flex-start;
