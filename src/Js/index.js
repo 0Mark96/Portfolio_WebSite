@@ -148,6 +148,12 @@ img4.addEventListener('click',()=>{
     location.href='portfolio-projects/oldportfolio_project.html'
   },1000)
 })
+const img5 = document.getElementById('img5')
+img5.addEventListener('click',()=>{
+  setTimeout(()=>{
+    location.href='portfolio-projects/vegRecipes_project.html'
+  },1000)
+})
 
 
 // --------ANIMATION ON SCROLL EVENT-------------------------------
