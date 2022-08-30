@@ -17,22 +17,22 @@ $h3Tsize:4vw;
 $h4Tsize:3vw;
 //------------------------------^
 
-// FONT
-@font-face {
-    font-family: 'Font';
-    src: url('../../assets/font/Gayathri-Thin.woff2') format('woff2'),
-         url('../../assets/font/Gayathri-Thin.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../../assets/font/Gayathri-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
-}
-@font-face {
-    font-family: 'FontBold';
-    src: url('../../assets/font/Gayathri-Regular.woff2') format('woff2'),
-         url('../../assets/font/Gayathri-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-         url('../../assets/font/Gayathri-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('../../assets/font/Gayathri-Regular.svg') format('svg');
+// // FONT
+// @font-face {
+//     font-family: 'Font';
+//     src: url('../../assets/font/Gayathri-Thin.woff2') format('woff2'),
+//          url('../../assets/font/Gayathri-Thin.woff') format('woff'), /* Pretty Modern Browsers */
+//          url('../../assets/font/Gayathri-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+// }
+// @font-face {
+//     font-family: 'FontBold';
+//     src: url('../../assets/font/Gayathri-Regular.woff2') format('woff2'),
+//          url('../../assets/font/Gayathri-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+//          url('../../assets/font/Gayathri-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+//          url('../../assets/font/Gayathri-Regular.svg') format('svg');
 
-}
-//------------------------------^
+// }
+// //------------------------------^
 
 // Mixin flex center
 
@@ -59,7 +59,8 @@ html{
 html body{
     background-color: $black;
     color:$white;
-    font-family: 'Font';
+    font-family: 'Gayathri', sans-serif;
+    
     overflow-x: hidden;
     max-width: 2000px;
     margin: 0 auto;
@@ -139,15 +140,13 @@ header{
         transition:  all .8s ease-out;
         text-align: center;
         overflow-y:auto;
-        font-family: 'FontBold';
+        
         li{
             list-style: none; 
             margin: 3em;
-
             a{
                 text-decoration: none;
                 color: $white;
-                // font-size: 30px;
                 -webkit-tap-highlight-color: rgba(0,0,0,0);
                 &:hover{
                     transition: all .6s linear;
@@ -173,20 +172,17 @@ main{
     justify-content: center;
     height:650px;
     position:relative;
-    font-family: 'FontBold';
     .home{
         height: 90%;
         width: 95%;
         position:relative;
-        font-family: 'FontBold';
+        
         .title {
             position: relative;
             top:18%;
             width: auto;
-            font-family: 'FontBold';
             h1{
                 font-size: $h1Size;
-                font-family: 'FontBold';
                 .hello{
                         color: $blue;
                         font-size: 3em;
@@ -243,7 +239,6 @@ main{
         flex-direction: column;
         h1{
             font-size:$h1Size + 2vw;
-            font-family: 'FontBold';
             color: $blue;
             align-self:flex-end;
         }
@@ -404,7 +399,6 @@ main{
                 flex-direction: column;
         h1{
             font-size:$h1Size + 2vw;
-            font-family: 'FontBold';
             color: $blue;
                 align-self:flex-start;
         }
