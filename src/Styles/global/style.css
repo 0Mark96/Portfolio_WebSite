@@ -136,7 +136,7 @@ main .home .title {
   width: auto;
 }
 main .home .title h1 {
-  font-size: 9vw;
+  font-size: 8.5vw;
 }
 main .home .title h1 .hello {
   color: #38B6FF;
@@ -190,7 +190,7 @@ main img {
   flex-direction: column;
 }
 .hard-skill .title-sentence h1 {
-  font-size: 11vw;
+  font-size: 10.5vw;
   color: #38B6FF;
   align-self: flex-end;
 }
@@ -347,7 +347,7 @@ main img {
   flex-direction: column;
 }
 .portfolio-section .title-sentence h1 {
-  font-size: 11vw;
+  font-size: 10.5vw;
   color: #38B6FF;
   align-self: flex-start;
 }
