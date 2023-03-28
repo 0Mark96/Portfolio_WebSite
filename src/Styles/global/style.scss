@@ -288,7 +288,7 @@ main{
             .html-progress{
                 position:relative;
                 height: 100%;
-                width: 95%; 
+                width: 97%; 
                 .progress{
                     position:absolute;
                     left:0;
@@ -300,7 +300,7 @@ main{
             .css-progress{
                 position: relative;
                 height: 100%;
-                width: 90%;
+                width: 95%;
                 .progress{
                     position:absolute;
                     left:0;
@@ -312,7 +312,7 @@ main{
             .js-progress{
                 position: relative;
                 height: 100%;
-                width: 80%;
+                width: 90%;
                 .progress{
                     position:absolute;
                     left:0;
@@ -324,7 +324,7 @@ main{
             .react-progress{
                 position:relative;
                 height: 100%;
-                width: 60%;
+                width: 90%;
                 .progress{
                     position:absolute;
                     left:0;
@@ -348,7 +348,7 @@ main{
             .sass-progress{
                 position:relative;
                 height: 100%;
-                width: 90%;
+                width: 95%;
                 .progress{
                     position:absolute;
                     left:0;
@@ -369,10 +369,46 @@ main{
                     transition: width 1s ease;
                 }  
             }
-            .github-progress{
+            .git-progress{
                 position:relative;
                 height: 100%;
-                width: 80%;
+                width: 95%;
+                .progress{
+                    position:absolute;
+                    left:0;
+                    height: 100%;
+                    background-color: $blue;
+                    transition: width 1s ease;
+                }  
+            }
+            .npm-progress{
+                position:relative;
+                height: 100%;
+                width: 85%;
+                .progress{
+                    position:absolute;
+                    left:0;
+                    height: 100%;
+                    background-color: $blue;
+                    transition: width 1s ease;
+                }  
+            }
+            .sourcetree-progress{
+                position:relative;
+                height: 100%;
+                width: 85%;
+                .progress{
+                    position:absolute;
+                    left:0;
+                    height: 100%;
+                    background-color: $blue;
+                    transition: width 1s ease;
+                }  
+            }
+            .jest-progress{
+                position:relative;
+                height: 100%;
+                width: 85%;
                 .progress{
                     position:absolute;
                     left:0;
@@ -608,7 +644,7 @@ footer{
         margin-top: 80px;
         .title-sentence {
             h1{
-            font-size: $h1Tsize +1vw;
+            font-size: $h1Tsize + 1vw;
             }
         
             h3{

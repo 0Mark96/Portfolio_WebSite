@@ -24,7 +24,7 @@ html body {
 header {
   display: flex;
   justify-content: center;
-  background: #0101014d;
+  background: rgba(1, 1, 1, 0.3019607843);
   backdrop-filter: blur(1.7px);
   -webkit-backdrop-filter: blur(1.7px);
   height: 9vh;
@@ -240,7 +240,7 @@ main img {
 .hard-skill .skill-container .list .progress-bar .html-progress {
   position: relative;
   height: 100%;
-  width: 95%;
+  width: 97%;
 }
 .hard-skill .skill-container .list .progress-bar .html-progress .progress {
   position: absolute;
@@ -252,7 +252,7 @@ main img {
 .hard-skill .skill-container .list .progress-bar .css-progress {
   position: relative;
   height: 100%;
-  width: 90%;
+  width: 95%;
 }
 .hard-skill .skill-container .list .progress-bar .css-progress .progress {
   position: absolute;
@@ -264,7 +264,7 @@ main img {
 .hard-skill .skill-container .list .progress-bar .js-progress {
   position: relative;
   height: 100%;
-  width: 80%;
+  width: 90%;
 }
 .hard-skill .skill-container .list .progress-bar .js-progress .progress {
   position: absolute;
@@ -276,7 +276,7 @@ main img {
 .hard-skill .skill-container .list .progress-bar .react-progress {
   position: relative;
   height: 100%;
-  width: 60%;
+  width: 90%;
 }
 .hard-skill .skill-container .list .progress-bar .react-progress .progress {
   position: absolute;
@@ -300,7 +300,7 @@ main img {
 .hard-skill .skill-container .list .progress-bar .sass-progress {
   position: relative;
   height: 100%;
-  width: 90%;
+  width: 95%;
 }
 .hard-skill .skill-container .list .progress-bar .sass-progress .progress {
   position: absolute;
@@ -321,12 +321,48 @@ main img {
   background-color: #38B6FF;
   transition: width 1s ease;
 }
-.hard-skill .skill-container .list .progress-bar .github-progress {
+.hard-skill .skill-container .list .progress-bar .git-progress {
   position: relative;
   height: 100%;
-  width: 80%;
+  width: 95%;
 }
-.hard-skill .skill-container .list .progress-bar .github-progress .progress {
+.hard-skill .skill-container .list .progress-bar .git-progress .progress {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background-color: #38B6FF;
+  transition: width 1s ease;
+}
+.hard-skill .skill-container .list .progress-bar .npm-progress {
+  position: relative;
+  height: 100%;
+  width: 85%;
+}
+.hard-skill .skill-container .list .progress-bar .npm-progress .progress {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background-color: #38B6FF;
+  transition: width 1s ease;
+}
+.hard-skill .skill-container .list .progress-bar .sourcetree-progress {
+  position: relative;
+  height: 100%;
+  width: 85%;
+}
+.hard-skill .skill-container .list .progress-bar .sourcetree-progress .progress {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background-color: #38B6FF;
+  transition: width 1s ease;
+}
+.hard-skill .skill-container .list .progress-bar .jest-progress {
+  position: relative;
+  height: 100%;
+  width: 85%;
+}
+.hard-skill .skill-container .list .progress-bar .jest-progress .progress {
   position: absolute;
   left: 0;
   height: 100%;
@@ -497,7 +533,6 @@ footer .container-link-contact .go-on-top .fa-forward {
   .nav-link-container a {
     font-size: 4.5vw;
   }
-
   main {
     height: 1150px;
   }
@@ -511,7 +546,6 @@ footer .container-link-contact .go-on-top .fa-forward {
     width: 50vw;
     height: 50vw;
   }
-
   .hard-skill .title-sentence h1 {
     font-size: 9vw;
   }
@@ -527,7 +561,6 @@ footer .container-link-contact .go-on-top .fa-forward {
   .hard-skill .skill-container .list {
     font-size: 3vw;
   }
-
   .portfolio-section {
     margin-top: 80px;
   }
@@ -542,7 +575,6 @@ footer .container-link-contact .go-on-top .fa-forward {
     margin-top: 80px;
     grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   }
-
   footer {
     margin-top: 80px;
   }
@@ -575,7 +607,6 @@ footer .container-link-contact .go-on-top .fa-forward {
   header {
     display: none;
   }
-
   main {
     height: 100vh;
   }
@@ -640,7 +671,6 @@ footer .container-link-contact .go-on-top .fa-forward {
     width: 58vh;
     height: 58vh;
   }
-
   .hard-skill .title-sentence {
     margin-top: 100px;
     width: 80%;
@@ -671,7 +701,6 @@ footer .container-link-contact .go-on-top .fa-forward {
     align-self: flex-start;
     margin-left: 150px;
   }
-
   .portfolio-section .title-sentence {
     margin-top: 0px;
     width: 80%;
@@ -689,7 +718,6 @@ footer .container-link-contact .go-on-top .fa-forward {
     max-width: 1200px;
     margin-top: 100px;
   }
-
   footer {
     margin-top: 80px;
   }
