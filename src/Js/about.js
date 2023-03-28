@@ -1,4 +1,5 @@
 // ----------------------Header effect mobile-------------------------------------
+//
 const navMenu = document.getElementById('navMenu');
 const body = document.querySelector('body');
 const header = document.querySelector('header')
